@@ -1,17 +1,41 @@
 html, body {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 #root {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .App {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: #EEEEEE;
+}
+
+@font-face {
+  font-family: 'Alice';
+  src: url(../public/fonts/Alice-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Arsenal';
+  src: url(../public/fonts/Arsenal-Regular.ttf);
+}
+
+p,span,h2,h3,button {
+  font-family: 'Arsenal';
+}
+
+h1 {
+  font-family: 'Alice';
+}
+
+.center {
+  margin: 0 auto;
+  width: 70%;
 }
