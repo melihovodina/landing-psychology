@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    animation: fadeInDown 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
 }
 
 .header-left {
@@ -10,14 +13,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
+}
+
+.separate-flower {
+    width: 18px;
+    height: 15px;
 }
 
 .header-button {
     cursor: pointer;
     font-size: 18px;
     margin: 0;
-    user-select: none;
 }
   
 .header-button::after {
@@ -34,18 +41,28 @@
     width: 100%;
 }
 
-.header-right {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.header-icon-img {
-    transition: 0.3s ease;
-}
+@media (min-width: 1920px) {
+    .header {
+        height: 80px;
+    }
 
-.header-icon-img:hover {
-    scale: 1.3;
+    .separate-flower {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .header-left {
+        height: 80px;
+    }
 }
