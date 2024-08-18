@@ -46,15 +46,32 @@
     background-color: #7cb1c7;
 }
 
-.mainTitle-image {
-    width: 75%;
+.mainTitle-image-first,
+.mainTitle-image-second,
+.mainTitle-image-third {
     position: absolute;
-    top: 15%;
-    right: 60%;
     z-index: 0;
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
+}
+
+.mainTitle-image-first {
+    width: 100%;
+    top: 5%;
+    right: 45%;
+}
+
+.mainTitle-image-second {
+    width: 20vw;
+    bottom: 60vh;
+    left: 25vw;
+}
+
+.mainTitle-image-third {
+    width: 25vw;
+    bottom: 10vh;
+    left: 60vw;
 }
 
 @keyframes fadeIn {
@@ -100,9 +117,19 @@
         background-color: #7cb1c7;
     }
 
-    .mainTitle-image {
-        width: 100%;
-        top: 5%;
-        right: 50%;
+    .mainTitle-image-first {
+        width: 120%;
+        top: 0%;
+        right: 35%;
     }
-}
+
+    .mainTitle-image-second {
+        bottom: 64vh;
+        left: 21vw;
+    }
+
+    .mainTitle-image-third {
+        bottom: 10vh;
+        left: 60vw;
+    }
+} 

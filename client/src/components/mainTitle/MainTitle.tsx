@@ -9,7 +9,9 @@ const MainTitle: FC = () => {
         <h1 className="mainTitle-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
         <button className="mainTitle-button">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
-      <img className='mainTitle-image' src="/images/background-flower.png" alt="Photo on main page"/> 
+      <img className='mainTitle-image-first' src="/images/main-flower-1.png" alt="first background flower on main page"/>
+      <img className='mainTitle-image-second' src="/images/main-flower-2.png" alt="second background flower on main page"/>
+      <img className='mainTitle-image-third' src="/images/main-flower-3.png" alt="third background flower on main page"/>  
     </div>
   );
 }

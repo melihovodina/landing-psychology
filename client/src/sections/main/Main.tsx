@@ -9,7 +9,7 @@ const Main = () => {
       <Header/>
       <div className='main-center center'>
         <MainTitle/>
-        <img className='main-photo' src="/images/main.JPG" alt="Photo on main page"/> 
+        <img className='main-photo' src="/images/main.JPG" alt="Psychologist on main page"/> 
       </div>
     </div>
   )
