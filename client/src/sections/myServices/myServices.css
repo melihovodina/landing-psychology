@@ -4,3 +4,9 @@
     background-color: white;
     display: flex;
 }
+
+.myServices-title {
+    margin-top: 10vh;
+    font-size: 40px;
+    font-weight: 400;
+}

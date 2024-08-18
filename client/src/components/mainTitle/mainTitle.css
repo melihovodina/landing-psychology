@@ -21,7 +21,6 @@
     font-size: 70px;
     font-weight: 400;
     margin: 20px 0 0 0;
-    color: #7cb1c7;
     animation: fadeInUp 0.8s ease-out forwards;
     animation-delay: 0.4s;
     opacity: 0;
@@ -43,7 +42,7 @@
 }
 
 .mainTitle-button:hover {
-    background-color: #7cb1c7;
+    background-color: #71A5BC;
 }
 
 .mainTitle-image-first,

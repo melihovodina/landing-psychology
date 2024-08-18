@@ -1,0 +1,6 @@
+.servicesList-main {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5vh;
+}

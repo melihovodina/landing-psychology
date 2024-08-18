@@ -34,6 +34,7 @@ p,span,h2,h3,button {
 
 h1 {
   font-family: 'Alice';
+  color: #71A5BC;
 }
 
 ::-webkit-scrollbar {
