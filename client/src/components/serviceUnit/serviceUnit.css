@@ -1,7 +1,7 @@
 .serviceUnit-rear-block {
+    width: 20.5vw;
+    height: 51vh;
     display: flex;
-    width: 310px;
-    height: 350px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 2px 10px 5px #E8DDD8;
@@ -10,16 +10,41 @@
 }
 
 .serviceUnit-block {
-    width: 300px;
-    height: 340px;
+    width: 20vw;
+    height: 50vh;
     display: block;
     border-radius: 5px;
-    border: 1px solid var(--Dark-Brown, #D2BEB5);
+    border: 1px solid #D2BEB5;
     box-sizing: border-box;
-    background: var(--White, #FFF);
+    background-color: #FFF;
     padding: 10px;
 }
 
 .serviceUnit-title {
     font-weight: 400;
+    margin: 0;
+}
+
+.serviceUnit-text {
+    margin-top: 10px;
+}
+
+@media (min-width: 1920px) {
+    .serviceUnit-title {
+        font-size: 30px;
+    }
+
+    .serviceUnit-text {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .serviceUnit-title {
+        font-size: 40px;
+    }
+
+    .serviceUnit-text {
+        font-size: 30px;
+    }
 }

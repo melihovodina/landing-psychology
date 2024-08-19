@@ -1,6 +1,6 @@
 .servicesList-main {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
     margin-top: 5vh;
 }

@@ -1,12 +1,51 @@
 .myServices-main {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: white;
+    position: relative;
     display: flex;
 }
 
+.myServices-content {
+    position: relative;
+    z-index: 1;
+}
+
 .myServices-title {
-    margin-top: 10vh;
     font-size: 40px;
     font-weight: 400;
+    margin-top: 15vh;
+}
+
+.myServices-image-first,
+.myServices-image-second {
+    position: absolute;
+    z-index: 0;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.myServices-image-first {
+    width: 35%;
+    bottom: 5%;
+    left: -2%;
+}
+
+.myServices-image-second {
+    width: 35%;
+    top: 5%;
+    right: -3%;
+}
+
+@media (min-width: 1920px) {
+    .myServices-title {
+        font-size: 52px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .myServices-title {
+        font-size: 60px;
+    }
 }
