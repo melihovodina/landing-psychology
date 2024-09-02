@@ -1,6 +1,6 @@
 .serviceUnit-rear-block {
     width: 20.5vw;
-    height: 51vh;
+    min-height: 51vh;
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -11,7 +11,7 @@
 
 .serviceUnit-block {
     width: 20vw;
-    height: 50vh;
+    min-height: 50vh;
     display: block;
     border-radius: 5px;
     border: 1px solid #D2BEB5;
