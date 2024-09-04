@@ -1,7 +1,24 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import './mainTitle.css';
+import { DeviceContext } from '../contexts/DeviceContext';
 
 const MainTitle: FC = () => {
+  const {isMobile} = useContext(DeviceContext)
+
+  if(isMobile) {
+    return (
+      <div className='mainTitle-main'>
+        <div className='mainTitle-block'>
+          <h2 className="mainTitle-subtitle">ПСИХОЛОГ</h2>
+          <h1 className="mainTitle-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
+          <div className='mainTitle-button-box'>
+            <button className="mainTitle-button">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className='mainTitle-main'>
       <div className='mainTitle-block'>

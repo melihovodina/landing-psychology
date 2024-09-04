@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './main.css'
 import Header from '../../components/header/Header'
 import MainTitle from '../../components/mainTitle/MainTitle'
+import { DeviceContext } from '../../components/contexts/DeviceContext'
 
 const Main = () => {
   return (

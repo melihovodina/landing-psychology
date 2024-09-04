@@ -4,3 +4,11 @@
     justify-content: space-between;
     margin-top: 5vh;
 }
+
+@media (max-width: 720px) {
+    .servicesList-main {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+}
