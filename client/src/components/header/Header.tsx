@@ -20,7 +20,26 @@ const Header: FC = () => {
       <>
         <div className={`overlay ${isOpen ? 'overlay-open' : 'overlay-close'}`}/>
         <header className="header center">
-          <div className={`header-dropdown-menu ${ isOpen ? 'header-open' : 'header-close'}`}>
+          <div className={`header-rear-block ${ isOpen ? 'header-open' : 'header-close'}`}>
+            <div className={`header-dropdown-menu`}>
+              <h1 className='header-title'>ОЛЬГА СТРЕЛЬЦОВА</h1>
+              <div className='header-option'>
+                <SeparateFlower/>
+                <span className='header-button'>Мои услуги</span>
+              </div>
+              <div className='header-option'>
+                <SeparateFlower/>
+                <span className='header-button'>Обо мне</span>
+              </div>
+              <div className='header-option'>
+                <SeparateFlower/>
+                <span className='header-button'>Образование</span>
+              </div>
+              <div className='header-option'>
+                <SeparateFlower/>
+                <span className='header-button'>Отзывы</span>
+              </div>
+            </div>
           </div>
           <button className="header-main-button" onClick={() => openHeader()}>
             <div className="header-vector" />
