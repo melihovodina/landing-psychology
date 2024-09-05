@@ -1,16 +1,23 @@
 import React, { FC, ReactNode } from "react";
 import { useInView } from "react-intersection-observer";
 
-const LazyComponent: FC<{ children: ReactNode, height?: string, threshold: number}> = ({ children, height, threshold }) => {
+interface LazyComponentProps {
+  children: ReactNode, 
+  height?: string, 
+  width?: string, 
+  threshold?: number
+}
+
+const LazyComponent: FC<LazyComponentProps> = ({ children, height, width = '10vw' , threshold }) => {
   const { ref, inView } = useInView({
-    threshold: threshold,
+    threshold: threshold || 0,
     triggerOnce: true
   });
 
   console.log(`Element is in view: ${inView}`);
 
   return (
-    <div ref={ref} style={{ minHeight: height }}>
+    <div ref={ref} style={{ minHeight: height, minWidth: width }}>
       {inView ? children : null}
     </div>
   )

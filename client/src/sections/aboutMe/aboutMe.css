@@ -112,11 +112,14 @@
         font-size: 18px;
         margin-left: 15px;
         margin-right: 15px;
+        animation: fadeInLeft 0.8s ease-out forwards;
     }
     
-    .aboutMe-photo {
+    .aboutMe-photo-first,
+    .aboutMe-photo-second {
         width: 350px;
         height: auto;
         margin-top: 20px;
+        animation: fadeInUp 0.8s ease-out forwards;
     }
 }

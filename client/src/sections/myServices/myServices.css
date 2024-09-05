@@ -15,6 +15,7 @@
     font-size: 40px;
     font-weight: 400;
     margin-top: 15vh;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .myServices-image-first,
