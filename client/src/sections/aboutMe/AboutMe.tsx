@@ -1,24 +1,29 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { aboutMeText } from '../../оther/texts'
 import './aboutMe.css'
+import LazyComponent from '../../components/LazyComponent'
 
-const AboutMe = () => {
+const AboutMe:FC = () => {
   return (
     <div className='aboutMe-main'>
       <div className='aboutMe-content center'>
+        <LazyComponent height='60vh' threshold={0.6}>
         <div className='aboutMe-top'>
-          <div className='photo-block'/>
+          <img className='aboutMe-photo-first' src="/images/main.JPG" alt="Psychologist on main page"/> 
           <div className='aboutMe-textblock'>
             <h1 className='aboutMe-title'>ОБО МНЕ</h1>
-            <p className='aboutMe-text'>{aboutMeText[0]}</p>
+            <p className='aboutMe-text'>{aboutMeText[1]}</p>
           </div>
         </div>
+        </LazyComponent>
+        <LazyComponent height='60vh' threshold={0.6}>
         <div className='aboutMe-bottom'>
           <div className='aboutMe-textblock'>
             <p className='aboutMe-text'>{aboutMeText[1]}</p>
           </div>
-          <div className='photo-block'/>
+          <img className='aboutMe-photo-second' src="/images/main.JPG" alt="Psychologist on main page"/> 
         </div>
+        </LazyComponent>
       </div>
     </div>
   )
