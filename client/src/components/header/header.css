@@ -1,21 +1,16 @@
 .header {
+    width: auto;
     height: 60px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
     position: relative;
     animation: fadeInDown 0.8s ease-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
     z-index: 2;
-}
-
-.header-left {
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    margin: 0;
 }
 
 .separate-flower {
@@ -55,7 +50,7 @@
     gap: 4px;
     border-radius: 100px;
     border: none;
-    background-color:  rgba(113, 165, 188, 1);;
+    background-color: rgba(113, 165, 188, 1);;
     margin: 20px 15px 0px 0px;
 }
 
@@ -76,7 +71,7 @@
     text-align: center;
     top: -100vh;
     background-color: white;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
 }
 
 .header-dropdown-menu {
@@ -85,7 +80,7 @@
     min-height: 400px;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid #D2BEB5;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     text-align: left;
     flex-direction: column;

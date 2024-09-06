@@ -15,7 +15,7 @@ const AboutMe:FC = () => {
           <LazyComponent height='60vh' threshold={0.4}>
             <img className='aboutMe-photo-first' src="/images/main.JPG" alt="Psychologist on main page"/> 
           </LazyComponent>  
-          <LazyComponent height='60vh' threshold={0.6}>
+          <LazyComponent height='40vh' threshold={0.6}>
             <div className='aboutMe-textblock'>
               <h1 className='aboutMe-title'>ОБО МНЕ</h1>
               <p className='aboutMe-text'>{aboutMeText[1]}</p>
@@ -23,7 +23,7 @@ const AboutMe:FC = () => {
           </LazyComponent>  
         </div>
         <div className='aboutMe-bottom'>
-          <LazyComponent height='60vh' threshold={0.4}>
+          <LazyComponent height='40vh' threshold={0.4}>
             <div className='aboutMe-textblock'>
               <p className='aboutMe-text'>{aboutMeText[1]}</p>
             </div>

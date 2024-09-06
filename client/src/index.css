@@ -123,3 +123,9 @@ h1 {
     width: 100%;
   }
 }
+
+@media (min-width: 720px) and (max-width: 1200px) {
+  .center { 
+    width: 100%;
+  }
+}

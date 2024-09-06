@@ -53,15 +53,13 @@ const Header: FC = () => {
   
   return (
     <header className='header center'>
-        <div className='header-left'>
-          <span className='header-button'>Мои услуги</span>
-          <SeparateFlower/>
-          <span className='header-button'>Обо мне</span>
-          <SeparateFlower/>
-          <span className='header-button'>Образование</span>
-          <SeparateFlower/>
-          <span className='header-button'>Отзывы</span>
-        </div>
+      <span className='header-button'>Мои услуги</span>
+      <SeparateFlower/>
+      <span className='header-button'>Обо мне</span>
+      <SeparateFlower/>
+      <span className='header-button'>Образование</span>
+      <SeparateFlower/>
+      <span className='header-button'>Отзывы</span>
     </header>
   )
 }
