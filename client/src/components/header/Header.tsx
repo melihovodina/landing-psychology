@@ -19,7 +19,7 @@ const Header: FC = () => {
     return (
       <>
         <div className={`overlay ${isOpen ? 'overlay-open' : 'overlay-close'}`}/>
-        <header className="header center">
+        <header className="header">
           <div className={`header-rear-block ${ isOpen ? 'header-open' : 'header-close'}`}>
             <div className={`header-dropdown-menu`}>
               <h1 className='header-title'>ОЛЬГА СТРЕЛЬЦОВА</h1>

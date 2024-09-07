@@ -72,6 +72,7 @@
     top: -100vh;
     background-color: white;
     border-radius: 0 0 15px 15px;
+    right: 10px;
 }
 
 .header-dropdown-menu {

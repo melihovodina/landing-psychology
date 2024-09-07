@@ -32,6 +32,10 @@
 }
 
 @media (min-width: 1920px) {
+    .serviceUnit-block {
+        min-height: 500px;
+    }
+
     .serviceUnit-title {
         font-size: 30px;
     }
@@ -42,6 +46,10 @@
 }
 
 @media (min-width: 2560px) {
+    .serviceUnit-block {
+        min-height: 600px;
+    }
+
     .serviceUnit-title {
         font-size: 40px;
     }
