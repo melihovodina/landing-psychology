@@ -10,8 +10,9 @@
 }
 
 .serviceUnit-block {
-    width: 20vw;
-    min-height: 50vh;
+    max-width: 20vw;
+    min-height: 400px;
+    height: fit-content;
     display: block;
     border-radius: 10px;
     border: 1px solid #D2BEB5;
@@ -50,7 +51,7 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 719px) {
     .serviceUnit-rear-block {
         width: 310px;
         min-height: 350px;
@@ -61,6 +62,7 @@
     .serviceUnit-block {
         width: 300px;
         min-height: 340px;
+        max-width: none;
     }
     
     .serviceUnit-title {
@@ -69,5 +71,23 @@
     
     .serviceUnit-text {
         margin-top: 18px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+    .serviceUnit-block {
+        width: 300px;
+        height: fit-content;
+        max-width: none;
+        min-height: 350px;
+    }
+    
+    .serviceUnit-title {
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    .serviceUnit-text {
+        margin-top: 10px;
     }
 }

@@ -83,7 +83,7 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 719px) {
     .aboutMe-content {
         flex-direction: column;
     }
@@ -105,13 +105,11 @@
     
     .aboutMe-title {
         font-size: 32px;
-        margin: 0 0 10px 15px;
+        margin: 0 0 10px 0;
     }
     
     .aboutMe-text {
         font-size: 18px;
-        margin-left: 15px;
-        margin-right: 15px;
         animation: fadeInLeft 0.8s ease-out forwards;
     }
     

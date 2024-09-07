@@ -2,13 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5vh;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 719px) {
     .servicesList-main {
         flex-direction: column;
         justify-content: center;
         margin: 0;
     }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+    .servicesList-main{
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
 }

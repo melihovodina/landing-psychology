@@ -51,7 +51,7 @@
     border-radius: 100px;
     border: none;
     background-color: rgba(113, 165, 188, 1);;
-    margin: 20px 15px 0px 0px;
+    margin: 15px 20px 0px 0px;
 }
 
 .header-vector {
@@ -144,7 +144,7 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 719px) {
     .header {
         width: 100%;
         justify-content: end;

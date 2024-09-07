@@ -8,7 +8,7 @@ const ServicesList: FC = () => {
   return (
     <div className='servicesList-main'>
       {servicesText.map((item) => (
-        <LazyComponent height='40vh' threshold={0.6}>
+        <LazyComponent height='100px' width='100px' threshold={0.6}>
           <ServiceUnit item={item}/>
         </LazyComponent>
       ))}

@@ -120,12 +120,20 @@ h1 {
 
 @media (max-width: 720px) {
   .center {
-    width: 100%;
+    width: 95%;
   }
 }
 
-@media (min-width: 720px) and (max-width: 1200px) {
+@media (min-width: 720px) and (max-width: 850px) {
   .center { 
-    width: 100%;
+    width: 90%;
   }
 }
+
+@media (min-width: 850px) and (max-width: 1200px) {
+  .center { 
+    width: 80%;
+  }
+}
+
+

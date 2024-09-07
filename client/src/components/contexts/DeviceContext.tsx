@@ -16,7 +16,7 @@ interface DeviceProviderProps {
 }
 
 const DeviceProvider: React.FC<DeviceProviderProps> = ({ children }) => {
-  const isMobile = useMediaQuery({ query: '(max-width: 720px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 719px)' });
 
   return (
     <DeviceContext.Provider value={{ isMobile }}>

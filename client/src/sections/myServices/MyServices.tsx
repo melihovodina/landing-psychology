@@ -1,7 +1,7 @@
 import React from 'react'
-import './myServices.css'
 import ServicesList from '../../components/servicesList/ServicesList'
 import LazyComponent from '../../components/LazyComponent'
+import './myServices.css'
 
 const MyServices = () => {
   return (
