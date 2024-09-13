@@ -7,7 +7,7 @@ const MyServices = () => {
   return (
     <div className='myServices-main'>
       <div className='myServices-content center'>
-        <LazyComponent height='5vh' width='5vw' threshold={1}>
+        <LazyComponent height='40px' width='5vw' threshold={1}>
           <h1 className='myServices-title'>МОИ УСЛУГИ</h1>
         </LazyComponent>
         <ServicesList/>

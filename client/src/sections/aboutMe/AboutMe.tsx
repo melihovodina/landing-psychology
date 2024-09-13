@@ -12,7 +12,7 @@ const AboutMe:FC = () => {
       <div className='aboutMe-main'>
       <div className='aboutMe-content center'>
         <div className='aboutMe-top'>
-          <LazyComponent height='60vh' threshold={0.4}>
+          <LazyComponent height='40vh' threshold={0.4}>
             <img className='aboutMe-photo-first' src="/images/main.JPG" alt="Psychologist on main page"/> 
           </LazyComponent>  
           <LazyComponent height='40vh' threshold={0.6}>
@@ -28,7 +28,7 @@ const AboutMe:FC = () => {
               <p className='aboutMe-text'>{aboutMeText[1]}</p>
             </div>
           </LazyComponent>
-          <LazyComponent height='60vh' threshold={0.6}>  
+          <LazyComponent height='40vh' threshold={0.6}>  
             <img className='aboutMe-photo-second' src="/images/main.JPG" alt="Psychologist on main page"/>
           </LazyComponent> 
         </div>
@@ -40,7 +40,7 @@ const AboutMe:FC = () => {
   return (
     <div className='aboutMe-main'>
       <div className='aboutMe-content center'>
-        <LazyComponent height='60vh' width='10vw' threshold={0.6}>
+        <LazyComponent height='40vh' width='10vw' threshold={0.6}>
         <div className='aboutMe-top'>
           <img className='aboutMe-photo-first' src="/images/main.JPG" alt="Psychologist on main page"/> 
           <div className='aboutMe-textblock'>
@@ -49,7 +49,7 @@ const AboutMe:FC = () => {
           </div>
         </div>
         </LazyComponent>
-        <LazyComponent height='60vh' width='10vw' threshold={0.6}>
+        <LazyComponent height='40vh' width='10vw' threshold={0.6}>
         <div className='aboutMe-bottom'>
           <div className='aboutMe-textblock'>
             <p className='aboutMe-text'>{aboutMeText[1]}</p>

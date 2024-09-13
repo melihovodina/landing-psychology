@@ -1,6 +1,5 @@
 .myServices-main {
     width: 100vw;
-    min-height: 80vh;
     background-color: white;
     position: relative;
     display: flex;    
@@ -14,8 +13,9 @@
 .myServices-title {
     font-size: 40px;
     font-weight: 400;
-    margin-top: 10vh;
+    margin-top: 60px;
     animation: fadeInUp 0.8s ease-out forwards;
+    margin-bottom: 0;
 }
 
 .myServices-image-first,
@@ -101,5 +101,18 @@
         width: 35%;
         top: 5%;
         right: -3%;
+    }
+
+    .myServices-image-first {
+        width: 50%;
+        bottom: 5%;
+        left: 10%;
+    }
+    
+    .myServices-image-second {
+        width: 50%;
+        top: 0%;
+        right: 0%;
+        left: 55%;
     }
 }

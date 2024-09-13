@@ -53,6 +53,7 @@
     height: 50vh;
     margin-top: 5px;
     border-radius: 15px;
+    
 }
 
 .aboutMe-photo-first {
@@ -119,5 +120,23 @@
         height: auto;
         margin-top: 20px;
         animation: fadeInUp 0.8s ease-out forwards;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {    
+    .aboutMe-top {
+        align-items: center;
+    }
+    
+    .aboutMe-bottom {
+        align-items: center;
+    }
+    
+    .aboutMe-photo-first,
+    .aboutMe-photo-second {
+        width: auto;
+        height: 40vh;
+        margin-top: 5px;
+        border-radius: 15px;
     }
 }
