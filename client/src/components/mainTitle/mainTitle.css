@@ -210,4 +210,21 @@
         display:block;
         margin: 50px 0px;
     }
+
+    .mainTitle-image-first {
+        width: 60%;
+        top: 45%;
+        right: 40%;
+    }
+    
+    .mainTitle-image-second {
+        display: none;
+    }
+
+    .mainTitle-image-third {
+        width: 40%;
+        bottom: 0vh;
+        top: 20%;
+        left: 70%;
+    }
 }

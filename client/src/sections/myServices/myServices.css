@@ -1,5 +1,6 @@
 .myServices-main {
     width: 100vw;
+    min-height: 700px;
     background-color: white;
     position: relative;
     display: flex;    
@@ -22,6 +23,7 @@
 .myServices-image-second {
     position: absolute;
     z-index: 0;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 .myServices-image-first {

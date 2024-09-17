@@ -3,6 +3,7 @@ import './index.css'
 import Main from './sections/main/Main';
 import MyServices from './sections/myServices/MyServices';
 import AboutMe from './sections/aboutMe/AboutMe';
+import Education from './sections/education/Education';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Main/>
       <MyServices/>
       <AboutMe/>
+      <Education/>
     </div>
   );
 }

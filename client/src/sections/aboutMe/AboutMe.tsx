@@ -54,7 +54,7 @@ const AboutMe:FC = () => {
           <div className='aboutMe-textblock'>
             <p className='aboutMe-text'>{aboutMeText[1]}</p>
           </div>
-          <img className='aboutMe-photo-second' src="/images/main.JPG" alt="Psychologist on main page"/> 
+          <img className='aboutMe-photo-second' src="/images/main.JPG" alt="background flower on about me page"/> 
         </div>
         </LazyComponent>
       </div>
