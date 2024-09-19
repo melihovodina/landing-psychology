@@ -147,7 +147,7 @@
 
 @media (max-width: 719px) {
     .header {
-        width: 100%;
+        width: 97%;
         justify-content: end;
         position: absolute;
         align-items: center;

@@ -1,0 +1,12 @@
+.slider-main {
+    overflow: hidden;
+    width: 100%; /* Adjust width as needed */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-child {
+    transition: transform 0.3s ease;
+  }
