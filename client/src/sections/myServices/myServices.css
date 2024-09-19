@@ -51,6 +51,10 @@
 }
 
 @media (max-width: 719px) {
+    .myServices-main {
+        min-height: 1270px;
+    }
+
     .myServices-content {
         display: flex;
         text-align: justify;

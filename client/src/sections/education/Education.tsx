@@ -18,7 +18,7 @@ const Education = () => {
             <h2 className='education-subtitle'>{educationText[0]}</h2>
             <h2 className='education-subtitle'>{educationText[1]}</h2>
           </div>
-            <Slider>
+            <Slider mainClass='education-slider-main' containerClass='education-slider-container' childClass='education-slider-child'>
               <img className='education-photo' src="/images/education-test-1.jpg" alt="Psychologist on main page"/> 
               <img className='education-photo' src="/images/education-test-2.jpg" alt="Psychologist on main page"/>
             </Slider>
@@ -38,8 +38,8 @@ const Education = () => {
           <h2 className='education-subtitle'>{educationText[1]}</h2>
         </div>
           <div className='education-photos'>
-            <img className='education-photo' src="/images/main.JPG" alt="Psychologist on main page"/> 
-            <img className='education-photo' src="/images/main.JPG" alt="Psychologist on main page"/> 
+            <img className='education-photo' src="/images/education-test-1.jpg" alt="Psychologist on main page"/> 
+            <img className='education-photo' src="/images/education-test-2.jpg" alt="Psychologist on main page"/>
           </div>
       </div>
       <img className='education-image-first' src="/images/education-flower-1.png" alt="first background flower on about me page"/>

@@ -72,7 +72,6 @@
     top: -100vh;
     background-color: white;
     border-radius: 0 0 15px 15px;
-    right: 10px;
 }
 
 .header-dropdown-menu {
@@ -114,8 +113,8 @@
 .overlay {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 0px;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
@@ -147,9 +146,10 @@
 
 @media (max-width: 719px) {
     .header {
-        width: 97%;
+        width: 100%;
         justify-content: end;
         position: absolute;
         align-items: center;
+        margin-left: -10px;
     }
 }

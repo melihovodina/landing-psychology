@@ -1,12 +1,18 @@
-.slider-main {
+  .slider-main {
     overflow: hidden;
-    width: 100%; /* Adjust width as needed */
-    margin-top: 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .slider-container {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: transform 0.3s ease;
   }
   
   .slider-child {
-    transition: transform 0.3s ease;
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
   }

@@ -27,7 +27,7 @@
     margin: 0;
 }
 
-.education-slider {
+.education-slider-main {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .education-photo {
-    width: 20vw;
+    width: 30vw;
     margin-bottom: 130px;
 }
 
@@ -59,19 +59,19 @@
 }
 
 .education-image-first {
-    width: 18vw;
+    height: 85vh;
     left: 5vw;
     transform: scaleX(-1);
 }
 
 .education-image-second {
-    width: 15vw;
+    height: 80vh;
     left: 45vw;
 }
 
 .education-image-third {
-    width: 25vw;
-    left: 70vw;
+    height: 90vh;
+    left: 75vw;
     transform: scaleX(-1);
 }
 
@@ -109,22 +109,10 @@
         font-size: 20px;
     }
     
-    .education-slider {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 60px;
-        margin-bottom: 180px;
-    }
-    
-    .education-photos {
-        display: flex;
-        flex-direction: column;
+    .education-slider-main {
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
         margin-top: 20px;
+        margin-bottom: 0px;
     }
     
     .education-photo {
@@ -132,28 +120,17 @@
         margin-bottom: 50px;
     }
     
-    .education-image-first,
-    .education-image-second,
-    .education-image-third {
-        position: absolute;
-        z-index: 0;
-        bottom: 0;
-    }
-    
     .education-image-first {
-        width: 18vw;
-        left: 5vw;
+        width: auto;
+        height: 45vh;
+        left: 0vw;
         transform: scaleX(-1);
     }
     
-    .education-image-second {
-        width: 15vw;
-        left: 45vw;
-    }
-    
     .education-image-third {
-        width: 25vw;
-        left: 70vw;
+        width: auto;
+        height: 45vh;
+        left: 60vw;
         transform: scaleX(-1);
     }
 }
