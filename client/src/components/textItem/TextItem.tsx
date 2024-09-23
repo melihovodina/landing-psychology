@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './serviceUnit.css'
+import './textItem.css'
 
 interface ServiceUnitProps {
   item: { index: number; title: string; text: string };

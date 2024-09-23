@@ -3,7 +3,11 @@ import './reviews.css'
 
 const Reviews = () => {
   return (
-    <div></div>
+    <div className='reviews-main'>
+      <div className='reviews-content center'>
+        <h1 className='reviews-title'>ОТЗЫВЫ</h1>
+      </div>
+    </div>
   )
 }
 

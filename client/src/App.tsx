@@ -4,6 +4,7 @@ import Main from './sections/main/Main';
 import MyServices from './sections/myServices/MyServices';
 import AboutMe from './sections/aboutMe/AboutMe';
 import Education from './sections/education/Education';
+import Reviews from './sections/reviews/Reviews';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <MyServices/>
       <AboutMe/>
       <Education/>
+      <Reviews/>
     </div>
   );
 }

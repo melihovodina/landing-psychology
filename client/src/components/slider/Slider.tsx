@@ -1,6 +1,9 @@
-import React, { FC, ReactNode, useState, useRef } from 'react';
+import React, { FC, ReactNode, useState, useRef, useContext } from 'react';
 import './slider.css';
 import classNames from 'classnames';
+import { DeviceContext } from '../contexts/DeviceContext';
+import LeftArrow from '../svg/LeftArrow';
+import Arrow from '../Arrow';
 
 interface SliderProps {
   children: ReactNode;
@@ -21,6 +24,7 @@ const Slider: FC<SliderProps> = ({
   const [translateX, setTranslateX] = useState(0); //смещение элемента слайдера при перетаскивании
   const sliderRef = useRef<HTMLDivElement>(null); //ссылка на элемент слайдера
   const childrenArray = React.Children.toArray(children); //преобразует дочерние элементы в массив
+  const { isMobile } = useContext(DeviceContext);
 
   //обработчик начала касания
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -49,30 +53,40 @@ const Slider: FC<SliderProps> = ({
     setTranslateX(0); //сброс смещения
   };
 
-  return (
-    <div
-      className={classNames('slider-main', mainClass)}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-      ref={sliderRef}
-    >
+  if(isMobile) {
+    return (
       <div
-        className={classNames('slider-container', containerClass)}
-        style={{
-          transform: `translateX(${-currentIndex * 100 + translateX / window.innerWidth * 100}%)`,
-          transition: isDragging ? 'none' : 'transform 0.3s ease',
-        }}
+        className={classNames('slider-main', mainClass)}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        ref={sliderRef}
       >
-        {childrenArray.map((child, index) => (
-          <div
-            className={classNames('slider-child', childClass)}
-            key={index}
-          >
-            {child}
-          </div>
-        ))}
+        <div
+          className={classNames('slider-container', containerClass)}
+          style={{
+            transform: `translateX(${-currentIndex * 100 + translateX / window.innerWidth * 100}%)`,
+            transition: isDragging ? 'none' : 'transform 0.3s ease',
+          }}
+        >
+          {childrenArray.map((child, index) => (
+            <div
+              className={classNames('slider-child', childClass)}
+              key={index}
+            >
+              {child}
+            </div>
+          ))}
+        </div>
       </div>
+    );
+  }
+
+  return (
+    <div>
+      <Arrow/>
+        <div></div>
+      <Arrow/>
     </div>
   );
 };

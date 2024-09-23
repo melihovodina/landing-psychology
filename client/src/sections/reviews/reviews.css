@@ -1,0 +1,15 @@
+.reviews-main {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    background-color: #F5EDE8;
+}
+
+.reviews-content {
+
+}
+
+.reviews-title {
+    font-weight: 400;
+    font-size: 40px;
+}
