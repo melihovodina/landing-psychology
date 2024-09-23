@@ -1,7 +1,9 @@
 .education-main {
     width: 100%;
     height: auto;
+    min-height: 750px;
     position: relative;
+    display: flex;
 }
 
 .education-content {
@@ -13,6 +15,7 @@
     font-weight: 400;
     font-size: 40px;
     margin: 60px 0 0 0;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .education-subtitles{
@@ -25,6 +28,7 @@
 .education-subtitle {
     font-weight: 400;
     margin: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
 }
 
 .education-slider-main {
@@ -48,6 +52,7 @@
 .education-photo {
     width: 30vw;
     margin-bottom: 130px;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .education-image-first,
@@ -59,18 +64,21 @@
 }
 
 .education-image-first {
-    height: 85vh;
+    width: 16vw;
+    height: auto;
     left: 5vw;
     transform: scaleX(-1);
 }
 
 .education-image-second {
-    height: 80vh;
+    width: 15vw;
+    height: auto;
     left: 45vw;
 }
 
 .education-image-third {
-    height: 90vh;
+    width: 23vw;
+    height: auto;
     left: 75vw;
     transform: scaleX(-1);
 }
@@ -83,6 +91,21 @@
     .education-subtitle {
         font-size: 30px;
     }
+    
+    .education-image-first {
+        height: 70vh;
+        width:auto;
+    }
+    
+    .education-image-second {
+        height: 65vh;
+        width:auto;
+    }
+    
+    .education-image-third {
+        height: 75vh;
+        width:auto;
+    }
 }
 
 @media (min-width: 2560px) {
@@ -93,9 +116,28 @@
     .education-subtitle {
         font-size: 40px;
     }
+
+    .education-image-first {
+        height: 65vh;
+        width:auto;
+    }
+    
+    .education-image-second {
+        height: 60vh;
+        width:auto;
+    }
+    
+    .education-image-third {
+        height: 70vh;
+        width:auto;
+    }
 }
 
-@media (max-width: 719px) {    
+@media (max-width: 719px) {
+    .education-main {
+        min-height: 460px;
+    }
+    
     .education-title {
         font-size: 32px;
         margin: 40px 0 0 0;
@@ -121,16 +163,36 @@
     }
     
     .education-image-first {
-        width: auto;
         height: 45vh;
+        width:auto;
         left: 0vw;
-        transform: scaleX(-1);
     }
     
     .education-image-third {
-        width: auto;
         height: 45vh;
+        width:auto;
         left: 60vw;
-        transform: scaleX(-1);
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {    
+    .education-main {
+        min-height: 520px;
+    }
+    .education-photo {
+        margin-bottom: 60px;
+    }
+    
+    .education-image-first {
+        width: 20vw;
+    }
+    
+    .education-image-second {
+        width: 15vw;
+    }
+    
+    .education-image-third {
+        width: 25vw;
+        left: 70vw;
     }
 }
