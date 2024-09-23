@@ -2,7 +2,6 @@ import React, { FC, ReactNode, useState, useRef, useContext } from 'react';
 import './slider.css';
 import classNames from 'classnames';
 import { DeviceContext } from '../contexts/DeviceContext';
-import LeftArrow from '../svg/LeftArrow';
 import Arrow from '../Arrow';
 
 interface SliderProps {
@@ -10,6 +9,7 @@ interface SliderProps {
   mainClass?: string;
   containerClass?: string;
   childClass?: string;
+  visibleItems?: number;
 }
 
 const Slider: FC<SliderProps> = ({
@@ -17,6 +17,7 @@ const Slider: FC<SliderProps> = ({
   mainClass,
   containerClass,
   childClass,
+  visibleItems = 1
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0); //текущий индекс элемента слайдера
   const [isDragging, setIsDragging] = useState(false); //определяет, происходит ли сейчас перетаскивание
@@ -29,7 +30,7 @@ const Slider: FC<SliderProps> = ({
   //обработчик начала касания
   const handleTouchStart = (e: React.TouchEvent) => {
     setIsDragging(true);
-    setStartX(e.touches[0].clientX); // запоминаем начальную позицию касания
+    setStartX(e.touches[0].clientX); //запоминаем начальную позицию касания
   };
 
   //обработчик движения пальца
@@ -51,6 +52,14 @@ const Slider: FC<SliderProps> = ({
       }
     }
     setTranslateX(0); //сброс смещения
+  };
+
+  const handleArrowClick = (direction: 'left' | 'right') => {
+    if (direction === 'left' && currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    } else if (direction === 'right' && currentIndex < childrenArray.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
   };
 
   if(isMobile) {
@@ -83,10 +92,28 @@ const Slider: FC<SliderProps> = ({
   }
 
   return (
-    <div>
-      <Arrow/>
-        <div></div>
-      <Arrow/>
+    <div
+      className={classNames('slider-main', mainClass)}
+      ref={sliderRef}
+    >
+      <Arrow onClick={() => handleArrowClick('left')} />
+      <div
+        className={classNames('slider-container', containerClass)}
+        style={{
+          transform: `translateX(${-currentIndex * 100}%)`,
+          transition: 'transform 0.3s ease',
+        }}
+      >
+        {childrenArray.map((child, index) => (
+          <div
+            className={classNames('slider-child', childClass)}
+            key={index}
+          >
+            {child}
+          </div>
+        ))}
+      </div>
+      <Arrow onClick={() => handleArrowClick('right')} reverse/>
     </div>
   );
 };

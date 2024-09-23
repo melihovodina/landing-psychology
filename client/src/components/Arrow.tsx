@@ -1,6 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const Arrow = () => {
+interface ArrowProps {
+  onClick: () => void;
+  reverse?: boolean
+}
+
+const Arrow: React.FC<ArrowProps> = ({ onClick, reverse = false }) => {
   return (
     <svg 
       width="40" 
@@ -8,6 +13,8 @@ const Arrow = () => {
       viewBox="0 0 40 40" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
+      style={{cursor:"pointer", position:"relative", zIndex:2, transform: reverse ? "scaleX(-1)" : "none"}}
+      onClick={onClick}
     >
       <circle 
         cx="20" 
@@ -23,8 +30,7 @@ const Arrow = () => {
         stroke-linejoin="round"
       />
     </svg>
+  );
+};
 
-  )
-}
-
-export default Arrow
+export default Arrow;

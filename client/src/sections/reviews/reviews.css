@@ -6,10 +6,17 @@
 }
 
 .reviews-content {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews-title {
     font-weight: 400;
     font-size: 40px;
+}
+
+.reviews-slider-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
