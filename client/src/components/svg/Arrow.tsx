@@ -2,10 +2,10 @@ import React from 'react';
 
 interface ArrowProps {
   onClick: () => void;
-  reverse?: boolean
+  className: string;
 }
 
-const Arrow: React.FC<ArrowProps> = ({ onClick, reverse = false }) => {
+const Arrow: React.FC<ArrowProps> = ({ onClick, className }) => {
   return (
     <svg 
       width="40" 
@@ -13,8 +13,8 @@ const Arrow: React.FC<ArrowProps> = ({ onClick, reverse = false }) => {
       viewBox="0 0 40 40" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
-      style={{cursor:"pointer", position:"relative", zIndex:2, transform: reverse ? "scaleX(-1)" : "none"}}
       onClick={onClick}
+      className={className}
     >
       <circle 
         cx="20" 

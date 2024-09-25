@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import './reviews.css'
 import Slider from '../../components/slider/Slider'
 import { reviewsText } from '../../оther/texts'
@@ -10,11 +10,9 @@ const Reviews = () => {
     <div className='reviews-main'>
       <div className='reviews-content center'>
         <h1 className='reviews-title'>ОТЗЫВЫ</h1>
-        <Slider mainClass='reviews-slider-main' visibleItems={3}>
+        <Slider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child' visibleItems={3}>
           {reviewsText.map((item) => (
-            <LazyComponent height='100px' width='100px' threshold={0.6}>
               <ServiceUnit item={item}/>
-            </LazyComponent>
           ))}
         </Slider>
       </div>

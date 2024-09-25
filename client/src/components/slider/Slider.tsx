@@ -2,7 +2,7 @@ import React, { FC, ReactNode, useState, useRef, useContext } from 'react';
 import './slider.css';
 import classNames from 'classnames';
 import { DeviceContext } from '../contexts/DeviceContext';
-import Arrow from '../Arrow';
+import Arrow from '../svg/Arrow';
 
 interface SliderProps {
   children: ReactNode;
@@ -56,9 +56,9 @@ const Slider: FC<SliderProps> = ({
 
   const handleArrowClick = (direction: 'left' | 'right') => {
     if (direction === 'left' && currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+      setCurrentIndex(currentIndex - visibleItems);
     } else if (direction === 'right' && currentIndex < childrenArray.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex(currentIndex + visibleItems);
     }
   };
 
@@ -96,14 +96,12 @@ const Slider: FC<SliderProps> = ({
       className={classNames('slider-main', mainClass)}
       ref={sliderRef}
     >
-      <Arrow onClick={() => handleArrowClick('left')} />
-      <div
-        className={classNames('slider-container', containerClass)}
+      <Arrow onClick={() => handleArrowClick('left')} className='slider-arrow-left'/>
+      <div className={classNames('slider-container', containerClass)} 
         style={{
-          transform: `translateX(${-currentIndex * 100}%)`,
-          transition: 'transform 0.3s ease',
-        }}
-      >
+              transform: `translateX(calc(${(-currentIndex / visibleItems * 105)}%))`,
+              transition: 'transform 0.3s ease',
+        }}>
         {childrenArray.map((child, index) => (
           <div
             className={classNames('slider-child', childClass)}
@@ -113,7 +111,7 @@ const Slider: FC<SliderProps> = ({
           </div>
         ))}
       </div>
-      <Arrow onClick={() => handleArrowClick('right')} reverse/>
+      <Arrow onClick={() => handleArrowClick('right')} className='slider-arrow-right'/>
     </div>
   );
 };

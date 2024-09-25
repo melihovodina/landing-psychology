@@ -1,18 +1,35 @@
-  .slider-main {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-  
-  .slider-container {
-    width: 100%;
-    display: flex;
-    transition: transform 0.3s ease;
-  }
-  
-  .slider-child {
-    min-width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-  }
+.slider-main {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-container {
+  width: 100%;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider-arrow-left,
+.slider-arrow-right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.slider-arrow-left {
+  left: 0;
+}
+ 
+.slider-arrow-right {
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.slider-child {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
