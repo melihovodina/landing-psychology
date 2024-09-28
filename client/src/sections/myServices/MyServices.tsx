@@ -1,7 +1,7 @@
 import React from 'react'
 import { servicesText } from '../../оther/texts'
 import LazyComponent from '../../components/LazyComponent'
-import ServiceUnit from '../../components/textItem/TextItem'
+import TextItem from '../../components/textItem/TextItem'
 import './myServices.css'
 
 const MyServices = () => {
@@ -14,7 +14,7 @@ const MyServices = () => {
         <div className='servicesList-main'>
           {servicesText.map((item) => (
             <LazyComponent height='100px' width='100px' threshold={0.6}>
-              <ServiceUnit item={item}/>
+              <TextItem item={item} animation/>
             </LazyComponent>
           ))}
         </div>

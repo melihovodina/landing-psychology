@@ -4,10 +4,16 @@
   width: 100%;
 }
 
+.slider-pc {
+  width: 90%;
+  height: 100%;
+  background-color: #F5EDE8;
+  overflow: hidden;
+}
+
 .slider-container {
   width: 100%;
   display: flex;
-  transition: transform 0.3s ease;
 }
 
 .slider-arrow-left,

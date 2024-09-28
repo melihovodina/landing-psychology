@@ -65,6 +65,7 @@
         min-height: 350px;
         margin-bottom: 30px;
         animation: fadeInUp 0.8s ease-out forwards;
+        padding: 1px;
     }
     
     .serviceUnit-block {

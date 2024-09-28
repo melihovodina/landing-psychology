@@ -55,10 +55,13 @@ const Slider: FC<SliderProps> = ({
   };
 
   const handleArrowClick = (direction: 'left' | 'right') => {
+    const visibleItems = 3;
+    const totalItems = childrenArray.length;
+  
     if (direction === 'left' && currentIndex > 0) {
-      setCurrentIndex(currentIndex - visibleItems);
-    } else if (direction === 'right' && currentIndex < childrenArray.length - 1) {
-      setCurrentIndex(currentIndex + visibleItems);
+      setCurrentIndex(Math.max(0, currentIndex - visibleItems));
+    } else if (direction === 'right' && currentIndex < totalItems - visibleItems) {
+      setCurrentIndex(Math.min(totalItems - visibleItems, currentIndex + visibleItems));
     }
   };
 
@@ -97,19 +100,21 @@ const Slider: FC<SliderProps> = ({
       ref={sliderRef}
     >
       <Arrow onClick={() => handleArrowClick('left')} className='slider-arrow-left'/>
-      <div className={classNames('slider-container', containerClass)} 
-        style={{
-              transform: `translateX(calc(${(-currentIndex / visibleItems * 105)}%))`,
-              transition: 'transform 0.3s ease',
-        }}>
-        {childrenArray.map((child, index) => (
-          <div
-            className={classNames('slider-child', childClass)}
-            key={index}
-          >
-            {child}
-          </div>
-        ))}
+      <div className='slider-pc'>
+        <div className={classNames('slider-container', containerClass)} 
+          style={{
+                transform: `translateX(calc(${(-currentIndex / visibleItems * 105)}%))`,
+                transition: 'transform 0.8s ease',
+          }}>
+          {childrenArray.map((child, index) => (
+            <div
+              className={classNames('slider-child', childClass)}
+              key={index}
+            >
+              {child}
+            </div>
+          ))}
+        </div>
       </div>
       <Arrow onClick={() => handleArrowClick('right')} className='slider-arrow-right'/>
     </div>
