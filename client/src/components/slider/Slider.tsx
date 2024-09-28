@@ -25,7 +25,8 @@ const Slider: FC<SliderProps> = ({
   const [translateX, setTranslateX] = useState(0); //смещение элемента слайдера при перетаскивании
   const sliderRef = useRef<HTMLDivElement>(null); //ссылка на элемент слайдера
   const childrenArray = React.Children.toArray(children); //преобразует дочерние элементы в массив
-  const { isMobile } = useContext(DeviceContext);
+  const { isMobile, isTablet } = useContext(DeviceContext);
+  let step = isTablet ? 2 : 1
 
   //обработчик начала касания
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -45,7 +46,7 @@ const Slider: FC<SliderProps> = ({
     setIsDragging(false);
     //если смещение больше 50 пикселей, изменяем текущий индекс
     if (Math.abs(translateX) > 50) {
-      if (translateX < 0 && currentIndex < childrenArray.length - 1) {
+      if (translateX < 0 && currentIndex < childrenArray.length / step - 1) {
         setCurrentIndex(currentIndex + 1); //переход к следующему элементу
       } else if (translateX > 0 && currentIndex > 0) {
         setCurrentIndex(currentIndex - 1); //переход к предыдущему элементу
@@ -55,7 +56,6 @@ const Slider: FC<SliderProps> = ({
   };
 
   const handleArrowClick = (direction: 'left' | 'right') => {
-    const visibleItems = 3;
     const totalItems = childrenArray.length;
   
     if (direction === 'left' && currentIndex > 0) {
@@ -65,7 +65,7 @@ const Slider: FC<SliderProps> = ({
     }
   };
 
-  if(isMobile) {
+  if(isMobile || isTablet) {
     return (
       <div
         className={classNames('slider-main', mainClass)}

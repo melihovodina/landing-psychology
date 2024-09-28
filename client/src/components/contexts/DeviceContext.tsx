@@ -3,10 +3,12 @@ import { useMediaQuery } from 'react-responsive';
 
 type DeviceContextType = {
   isMobile: boolean;
+  isTablet: boolean;
 };
 
 const defaultValue: DeviceContextType = {
-  isMobile: false
+  isMobile: false,
+  isTablet: false
 };
 
 const DeviceContext = createContext<DeviceContextType>(defaultValue);
@@ -17,9 +19,10 @@ interface DeviceProviderProps {
 
 const DeviceProvider: React.FC<DeviceProviderProps> = ({ children }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 719px)' });
+  const isTablet = useMediaQuery({ query: '(min-width: 1200px) and (max-width: 1200px)' })
 
   return (
-    <DeviceContext.Provider value={{ isMobile }}>
+    <DeviceContext.Provider value={{ isMobile, isTablet }}>
       {children}
     </DeviceContext.Provider>
   );
