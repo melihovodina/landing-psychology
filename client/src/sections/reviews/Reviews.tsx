@@ -10,7 +10,7 @@ const Reviews = () => {
   return (
     <div className='reviews-main'>
       <div className='reviews-content center'>
-        <LazyComponent height='40px' width='5vw' threshold={1}>
+        <LazyComponent height='40px' width='5vw' threshold={0.9}>
         <h1 className='reviews-title'>ОТЗЫВЫ</h1>
         </LazyComponent>
         <LazyComponent height='10vh' threshold={0.6}>

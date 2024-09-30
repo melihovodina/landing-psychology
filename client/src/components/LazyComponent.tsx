@@ -8,7 +8,7 @@ interface LazyComponentProps {
   threshold?: number
 }
 
-const LazyComponent: FC<LazyComponentProps> = ({ children, height, width = '10vw' , threshold }) => {
+const LazyComponent: FC<LazyComponentProps> = ({ children, height, width = '5vw' , threshold }) => {
   const { ref, inView } = useInView({
     threshold: threshold || 0,
     triggerOnce: true
