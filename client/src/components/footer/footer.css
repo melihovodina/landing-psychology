@@ -1,0 +1,32 @@
+.footer-main {
+    width: 100vw;
+    height: 60px;
+    background-color: #F5EDE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #D2BEB5;
+}
+
+@media (min-width: 1920px) {
+    .footer-main {
+        height: 80px;
+    }
+
+    .footer-text {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .footer-main {
+        height: 100px;
+    }
+
+    .footer-text {
+        font-size: 30px;
+    }
+}
