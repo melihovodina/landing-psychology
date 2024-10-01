@@ -4,6 +4,7 @@
     min-height: 750px;
     position: relative;
     display: flex;
+    overflow-x: hidden;
 }
 
 .education-content {

@@ -1,4 +1,4 @@
-import React, { FC, useContext, useState } from 'react';
+import React, { FC, useContext, useState, useEffect } from 'react';
 import SeparateFlower from '../svg/SeparateFlower';
 import { DeviceContext } from '../contexts/DeviceContext';
 import './header.css';
@@ -6,6 +6,24 @@ import './header.css';
 const Header: FC = () => {
   const { isMobile } = useContext(DeviceContext);
   const [isOpen, setIsOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY;
+      if (currentScrollPosition > scrollPosition) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+      setScrollPosition(currentScrollPosition);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollPosition]);
 
   const openHeader = () => {
     setIsOpen(!isOpen);
@@ -28,7 +46,10 @@ const Header: FC = () => {
         <header className="header">
           <div className={`header-rear-block ${isOpen ? 'header-open' : 'header-close'}`}>
             <div className="header-dropdown-menu">
-              <h1 className="header-title" onClick={() => scrollToSection('main')}>ОЛЬГА СТРЕЛЬЦОВА</h1>
+              <div className='header-dropdown-menu-row'>
+                <h1 className="header-title" onClick={() => scrollToSection('main')}>ОЛЬГА СТРЕЛЬЦОВА</h1>
+                <button onClick={openHeader}>close</button>
+              </div>
               <div className="header-option">
                 <SeparateFlower />
                 <span className="header-button" onClick={() => scrollToSection('services')}>
@@ -61,7 +82,7 @@ const Header: FC = () => {
               </div>
             </div>
           </div>
-          <button className="header-main-button" onClick={openHeader}>
+          <button className="header-main-button" onClick={openHeader} style={{ top: visible ? '0px' : '-100px' }}>
             <div className="header-vector" />
             <div className="header-vector" />
             <div className="header-vector" />
