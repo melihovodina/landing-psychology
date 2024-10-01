@@ -14,8 +14,6 @@ const LazyComponent: FC<LazyComponentProps> = ({ children, height, width = '5vw'
     triggerOnce: true
   });
 
-  console.log(`Element is in view: ${inView}`);
-
   return (
     <div ref={ref} style={{ minHeight: height, minWidth: width }}>
       {inView ? children : null}

@@ -1,5 +1,6 @@
 .aboutMe-main {
     width: 100%;
+    /*min-height: ... (добавить когда будет текст)*/
     background-color: #F5EDE8;
     display: flex;
 }
@@ -110,7 +111,7 @@
     
     .aboutMe-text {
         font-size: 18px;
-        animation: fadeInLeft 0.8s ease-out forwards;
+        animation: fadeInUp 0.8s ease-out forwards;
     }
     
     .aboutMe-photo-first,

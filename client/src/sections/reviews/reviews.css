@@ -1,6 +1,7 @@
 .reviews-main {
     width: 100vw;
     height: auto;
+    min-height: 725px;
     margin: 0;
     background-color: #F5EDE8;
 }
@@ -56,6 +57,10 @@
 }
 
 @media (max-width: 719px) {
+    .reviews-main {
+        min-height: 528px;
+    }
+
     .reviews-slider-main {
         margin-bottom: 50px;
     }

@@ -14,7 +14,7 @@ const Header: FC = () => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ block: 'start' });
       if (isMobile) {
         setIsOpen(false);
       }
@@ -28,7 +28,7 @@ const Header: FC = () => {
         <header className="header">
           <div className={`header-rear-block ${isOpen ? 'header-open' : 'header-close'}`}>
             <div className="header-dropdown-menu">
-              <h1 className="header-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
+              <h1 className="header-title" onClick={() => scrollToSection('main')}>ОЛЬГА СТРЕЛЬЦОВА</h1>
               <div className="header-option">
                 <SeparateFlower />
                 <span className="header-button" onClick={() => scrollToSection('services')}>
@@ -51,6 +51,12 @@ const Header: FC = () => {
                 <SeparateFlower />
                 <span className="header-button" onClick={() => scrollToSection('reviews')}>
                   Отзывы
+                </span>
+              </div>
+              <div className="header-option">
+                <SeparateFlower />
+                <span className="header-button" onClick={() => scrollToSection('contacts')}>
+                  Запись на консультацию
                 </span>
               </div>
             </div>

@@ -5,6 +5,13 @@ import { DeviceContext } from '../contexts/DeviceContext';
 const MainTitle: FC = () => {
   const {isMobile} = useContext(DeviceContext)
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ block: 'start' });
+    }
+  };
+
   if(isMobile) {
     return (
       <div className='mainTitle-main'>
@@ -12,7 +19,7 @@ const MainTitle: FC = () => {
           <h2 className="mainTitle-subtitle">ПСИХОЛОГ</h2>
           <h1 className="mainTitle-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
           <div className='mainTitle-button-box'>
-            <button className="mainTitle-button">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
+            <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
           </div>
         </div>
         <img className='mainTitle-photo' src="/images/main.JPG" alt="Psychologist on main page"/>
@@ -25,7 +32,7 @@ const MainTitle: FC = () => {
       <div className='mainTitle-block'>
         <h2 className="mainTitle-subtitle">ПСИХОЛОГ</h2>
         <h1 className="mainTitle-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
-        <button className="mainTitle-button">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
+        <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
       <div className='mainTitle-photo-block'>
         <img className='mainTitle-photo' src="/images/main.JPG" alt="Psychologist on main page"/>
