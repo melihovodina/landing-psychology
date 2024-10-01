@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './reviews.css'
 import Slider from '../../components/slider/Slider'
 import { reviewsText } from '../../оther/texts'

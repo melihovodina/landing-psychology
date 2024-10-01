@@ -1,47 +1,61 @@
-import React, { FC, useContext, useState } from 'react'
-import SeparateFlower from '../svg/SeparateFlower'
-import { DeviceContext } from '../contexts/DeviceContext'
-import './header.css'
+import React, { FC, useContext, useState } from 'react';
+import SeparateFlower from '../svg/SeparateFlower';
+import { DeviceContext } from '../contexts/DeviceContext';
+import './header.css';
 
 const Header: FC = () => {
   const { isMobile } = useContext(DeviceContext);
   const [isOpen, setIsOpen] = useState(false);
 
   const openHeader = () => {
-    if (!isOpen) {
-      setIsOpen(true);
-    } else {
-      setIsOpen(false);
+    setIsOpen(!isOpen);
+  };
+
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      if (isMobile) {
+        setIsOpen(false);
+      }
     }
   };
 
   if (isMobile) {
     return (
       <>
-        <div className={`overlay ${isOpen ? 'overlay-open' : 'overlay-close'}`}/>
+        <div className={`overlay ${isOpen ? 'overlay-open' : 'overlay-close'}`} />
         <header className="header">
-          <div className={`header-rear-block ${ isOpen ? 'header-open' : 'header-close'}`}>
-            <div className={`header-dropdown-menu`}>
-              <h1 className='header-title'>ОЛЬГА СТРЕЛЬЦОВА</h1>
-              <div className='header-option'>
-                <SeparateFlower/>
-                <span className='header-button'>Мои услуги</span>
+          <div className={`header-rear-block ${isOpen ? 'header-open' : 'header-close'}`}>
+            <div className="header-dropdown-menu">
+              <h1 className="header-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
+              <div className="header-option">
+                <SeparateFlower />
+                <span className="header-button" onClick={() => scrollToSection('services')}>
+                  Мои услуги
+                </span>
               </div>
-              <div className='header-option'>
-                <SeparateFlower/>
-                <span className='header-button'>Обо мне</span>
+              <div className="header-option">
+                <SeparateFlower />
+                <span className="header-button" onClick={() => scrollToSection('about')}>
+                  Обо мне
+                </span>
               </div>
-              <div className='header-option'>
-                <SeparateFlower/>
-                <span className='header-button'>Образование</span>
+              <div className="header-option">
+                <SeparateFlower />
+                <span className="header-button" onClick={() => scrollToSection('education')}>
+                  Образование
+                </span>
               </div>
-              <div className='header-option'>
-                <SeparateFlower/>
-                <span className='header-button'>Отзывы</span>
+              <div className="header-option">
+                <SeparateFlower />
+                <span className="header-button" onClick={() => scrollToSection('reviews')}>
+                  Отзывы
+                </span>
               </div>
             </div>
           </div>
-          <button className="header-main-button" onClick={() => openHeader()}>
+          <button className="header-main-button" onClick={openHeader}>
             <div className="header-vector" />
             <div className="header-vector" />
             <div className="header-vector" />
@@ -50,18 +64,26 @@ const Header: FC = () => {
       </>
     );
   }
-  
-  return (
-    <header className='header center'>
-      <span className='header-button'>Мои услуги</span>
-      <SeparateFlower/>
-      <span className='header-button'>Обо мне</span>
-      <SeparateFlower/>
-      <span className='header-button'>Образование</span>
-      <SeparateFlower/>
-      <span className='header-button'>Отзывы</span>
-    </header>
-  )
-}
 
-export default Header
+  return (
+    <header className="header center">
+      <span className="header-button" onClick={() => scrollToSection('services')}>
+        Мои услуги
+      </span>
+      <SeparateFlower />
+      <span className="header-button" onClick={() => scrollToSection('about')}>
+        Обо мне
+      </span>
+      <SeparateFlower />
+      <span className="header-button" onClick={() => scrollToSection('education')}>
+        Образование
+      </span>
+      <SeparateFlower />
+      <span className="header-button" onClick={() => scrollToSection('reviews')}>
+        Отзывы
+      </span>
+    </header>
+  );
+};
+
+export default Header;
