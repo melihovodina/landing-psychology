@@ -26,11 +26,6 @@
     animation: fadeInUp 1s ease-out forwards;
 }
 
-.contacts-block {
-    display: flex;
-    flex-direction: row;
-}
-
 .contacts-profiles {
     display: flex;
     flex-direction: column;
@@ -136,5 +131,44 @@
 
     .contacts-photo {
         width: 450px;
+    }
+}
+
+@media (max-width: 719px) {
+    .contacts-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacts-title {
+        font-size: 32px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .contacts-subtitle {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    
+    .contacts-profiles {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contacts-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .contacts-adress {
+        font-size: 20px;
+    }
+    
+    .contacts-photo {
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
 }

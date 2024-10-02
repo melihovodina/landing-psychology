@@ -32,7 +32,7 @@ const Main = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollPosition]);
+  }, [scrollPosition, isMobile]);
 
   return (
     <div className='main'>

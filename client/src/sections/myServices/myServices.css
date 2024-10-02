@@ -68,7 +68,6 @@
         display: flex;
         text-align: justify;
         flex-direction: column;
-        width: 300px;
     }
     
     .myServices-title {

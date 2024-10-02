@@ -16,7 +16,7 @@ const Reviews = () => {
         <LazyComponent height='10vh' threshold={0.6}>
         <Slider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child' visibleItems={3}>
           {reviewsText.map((item) => (
-              <TextItem item={item}/>
+              <TextItem item={item} key={item.index}/>
           ))}
         </Slider>
         </LazyComponent>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface ArrowProps {
   onClick: () => void;
@@ -6,7 +6,6 @@ interface ArrowProps {
 }
 
 const Arrow: React.FC<ArrowProps> = ({ onClick, className }) => {
-  const [isHover, setIsHover] = useState(false)
 
   return (
     <svg 

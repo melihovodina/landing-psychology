@@ -13,8 +13,8 @@ const MyServices = () => {
         </LazyComponent>
         <div className='servicesList-main'>
           {servicesText.map((item) => (
-            <LazyComponent height='100px' width='100px' threshold={0.6}>
-              <TextItem item={item} animation/>
+            <LazyComponent key={item.index} height='100px' width='100px' threshold={0.6}>
+              <TextItem item={item} key={item.index} animation/>
             </LazyComponent>
           ))}
         </div>
