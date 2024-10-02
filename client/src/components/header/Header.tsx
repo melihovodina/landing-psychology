@@ -3,27 +3,9 @@ import SeparateFlower from '../svg/SeparateFlower';
 import { DeviceContext } from '../contexts/DeviceContext';
 import './header.css';
 
-const Header: FC = () => {
+const Header: FC<{visible: boolean}> = ({visible}) => {
   const { isMobile } = useContext(DeviceContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [visible, setVisible] = useState(true);
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPosition = window.scrollY;
-      if (currentScrollPosition > scrollPosition) {
-        setVisible(false);
-      } else {
-        setVisible(true);
-      }
-      setScrollPosition(currentScrollPosition);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [scrollPosition]);
 
   const openHeader = () => {
     setIsOpen(!isOpen);
