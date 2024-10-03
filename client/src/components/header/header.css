@@ -85,7 +85,6 @@
     animation: close 0.8s ease-in-out forwards;
 }
 
-
 .header-dropdown-menu {
     width: 97%;
     height: auto;
@@ -110,6 +109,19 @@
     font-size: 42px;
     font-weight: 400;
     margin: 15px 0 0 10px;
+}
+
+.header-close-button {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #D2BEB5;
+    background: #FFF;
+    margin: 10px 15px 0px 0px;
 }
 
 .header-option {

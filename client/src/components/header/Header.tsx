@@ -2,6 +2,7 @@ import React, { FC, useContext, useState } from 'react';
 import SeparateFlower from '../svg/SeparateFlower';
 import { DeviceContext } from '../contexts/DeviceContext';
 import './header.css';
+import Cross from '../svg/Cross';
 
 const Header: FC<{visible: boolean}> = ({visible}) => {
   const { isMobile } = useContext(DeviceContext);
@@ -30,7 +31,9 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
             <div className="header-dropdown-menu">
               <div className='header-dropdown-menu-row'>
                 <h1 className="header-title" onClick={() => scrollToSection('main')}>ОЛЬГА СТРЕЛЬЦОВА</h1>
-                <button onClick={openHeader}>close</button>
+                <div className='header-close-button' onClick={openHeader}>
+                  <Cross/>
+                </div>
               </div>
               <div className="header-option">
                 <SeparateFlower />

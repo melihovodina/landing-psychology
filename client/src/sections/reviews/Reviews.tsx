@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './reviews.css'
 import Slider from '../../components/slider/Slider'
 import { reviewsText } from '../../оther/texts'
 import TextItem from '../../components/textItem/TextItem'
 import LazyComponent from '../../components/LazyComponent'
+import { DeviceContext } from '../../components/contexts/DeviceContext'
+import BgArrow from '../../components/svg/BgArrow'
 
 const Reviews = () => {
+  const { isMobile, isTablet } = useContext(DeviceContext)
 
   return (
     <div className='reviews-main'>
@@ -20,6 +23,7 @@ const Reviews = () => {
           ))}
         </Slider>
         </LazyComponent>
+        { isMobile || isTablet ? <BgArrow  className='reviews-bgArrow'/> : null }
       </div>
     </div>
   )

@@ -44,6 +44,12 @@
     width:max-content;
 }
 
+.reviews-bgArrow {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 @media (min-width: 1920px) {
     .reviews-title {
         font-size: 52px;
@@ -58,11 +64,11 @@
 
 @media (max-width: 719px) {
     .reviews-main {
-        min-height: 528px;
+        min-height: 515px;
     }
 
     .reviews-slider-main {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     .reviews-slider-container {
@@ -83,7 +89,11 @@
 
 @media (min-width: 719px) and (max-width: 1200px) {
     .reviews-slider-main {
-        margin-bottom: 130px;
+        margin-bottom: 30px;
+    }
+
+    .reviews-bgArrow {
+        margin-bottom: 90px;
     }
 
     .reviews-slider-container {
