@@ -1,4 +1,4 @@
-import React, { FC, useContext, useState, useEffect } from 'react';
+import React, { FC, useContext, useState } from 'react';
 import SeparateFlower from '../svg/SeparateFlower';
 import { DeviceContext } from '../contexts/DeviceContext';
 import './header.css';

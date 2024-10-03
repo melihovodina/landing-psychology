@@ -41,7 +41,7 @@ const Arrow: React.FC<ArrowProps> = ({ onClick, className }) => {
       <path 
         d="M12 20C17.8579 20 27 20 27 20M12 20C13.9526 18.0474 17 15 17 15M12 20C13.9526 21.9526 17 25 17 25" 
         stroke="#71A5BC" 
-        stroke-width="3" 
+        strokeWidth="3" 
         strokeLinecap="round" 
         strokeLinejoin="round"
         style={{transition: "0.3s ease-in-out"}}

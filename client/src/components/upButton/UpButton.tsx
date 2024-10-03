@@ -52,7 +52,7 @@ const UpButton: FC<{visible: boolean}> = ({visible}) => {
           r="21" 
           fill="white" 
           stroke="#D2BEB5"
-          stroke-width="2"
+          strokeWidth="2"
           style={{transition: "0.1s ease-in-out"}}
         />
         <path 
