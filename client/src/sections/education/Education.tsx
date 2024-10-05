@@ -7,7 +7,7 @@ import LazyComponent from '../../components/LazyComponent';
 import BgArrow from '../../components/svg/BgArrow';
 
 const Education = () => {
-  const { isMobile, isTablet} = useContext(DeviceContext);
+  const { isMobile } = useContext(DeviceContext);
 
   if(isMobile) {
     return (

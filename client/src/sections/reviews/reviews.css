@@ -24,8 +24,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 130px;
+    margin-bottom: 120px;
     animation: fadeInUp 0.8s ease-out forwards;
+    padding: 10px;
 }
 
 .reviews-slider-container {
@@ -89,7 +90,7 @@
 
 @media (min-width: 719px) and (max-width: 1200px) {
     .reviews-slider-main {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .reviews-bgArrow {
