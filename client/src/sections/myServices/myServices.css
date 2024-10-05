@@ -36,15 +36,15 @@
 }
 
 .myServices-image-first {
-    width: 35%;
-    bottom: 5%;
-    left: -2%;
+    width: 25%;
+    bottom: 15%;
+    left: 3%;
 }
 
 .myServices-image-second {
-    width: 35%;
-    top: 5%;
-    right: -3%;
+    width: 25%;
+    top: 10%;
+    right: 2%;
 }
 
 @media (min-width: 1920px) {
@@ -89,14 +89,14 @@
     }
     
     .myServices-image-first {
-        width: 110%;
-        bottom: 80px;
-        left: -90px;
+        width: 90%;
+        bottom: 180px;
+        left: -70px;
     }
     
     .myServices-image-second {
-        width: 110%;
-        top: 0%;
+        width: 90%;
+        top: 20px;
         right: 0%;
         left: 100px;
     }

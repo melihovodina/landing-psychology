@@ -10,7 +10,7 @@ import Footer from './components/footer/Footer';
 import { CgSpinner } from 'react-icons/cg';
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     if ('scrollRestoration' in window.history) {

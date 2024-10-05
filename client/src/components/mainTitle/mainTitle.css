@@ -81,7 +81,7 @@
 }
 
 .mainTitle-image-first {
-    width: 35vw;
+    width: 30vw;
     top: 15vh;
     right: 45vw;
 }
@@ -93,9 +93,9 @@
 }
 
 .mainTitle-image-third {
-    width: 25vw;
-    bottom: 10vh;
-    left: 60vw;
+    width: 20vw;
+    bottom: 15vh;
+    left: 65vw;
 }
 
 .mainTitle-button-box {
@@ -124,9 +124,9 @@
     }
 
     .mainTitle-image-first {
-        width: 35vw;
+        width: 30vw;
         top: 10vh;
-        right: 45vw;
+        right: 50vw;
     }
 
     .mainTitle-image-second {
@@ -135,8 +135,8 @@
     }
 
     .mainTitle-image-third {
-        bottom: 10vh;
-        left: 60vw;
+        bottom: 15vh;
+        left: 65vw;
     }
 } 
 

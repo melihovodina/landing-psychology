@@ -61,6 +61,7 @@ const Contacts = () => {
           </LazyComponent>
         </div>
       </div>
+      <img className='contacts-image' src="/images/contacts-flower.png" alt="Psychologist on main page"/>
     </div>
   )
 }
