@@ -55,6 +55,41 @@ const Slider: FC<SliderProps> = ({
     setTranslateX(0); //сброс смещения
   };
 
+  // Обработчик начала перетаскивания мышью (для десктопов)
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true);
+    setStartX(e.clientX); // запоминаем начальную позицию мыши
+  };
+
+  // Обработчик движения мыши (перетаскивание)
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    const currentX = e.clientX;
+    setTranslateX(currentX - startX); // вычисляем смещение
+  };
+
+  // Обработчик окончания перетаскивания мышью (для десктопов)
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    // если смещение больше 50 пикселей, изменяем текущий индекс
+    if (Math.abs(translateX) > 50) {
+      if (translateX < 0 && currentIndex < childrenArray.length / step - 1) {
+        setCurrentIndex(currentIndex + 1); // переход к следующему элементу
+      } else if (translateX > 0 && currentIndex > 0) {
+        setCurrentIndex(currentIndex - 1); // переход к предыдущему элементу
+      }
+    }
+    setTranslateX(0); // сброс смещения
+  };
+
+  // Обработчик выхода мыши за пределы слайдера (для остановки перетаскивания)
+  const handleMouseLeave = () => {
+    if (isDragging) {
+      setIsDragging(false);
+      setTranslateX(0); // сброс смещения, если мышь вышла за пределы
+    }
+  };
+
   const handleArrowClick = (direction: 'left' | 'right') => {
     const totalItems = childrenArray.length;
   
@@ -72,6 +107,10 @@ const Slider: FC<SliderProps> = ({
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
         ref={sliderRef}
       >
         <div
@@ -92,7 +131,7 @@ const Slider: FC<SliderProps> = ({
         </div>
       </div>
     );
-  }
+  };
 
   return (
     <div

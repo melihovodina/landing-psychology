@@ -23,8 +23,8 @@ const Education = () => {
           <div style={{display: 'flex',flexDirection: 'column', justifyContent:'center', alignItems: 'center'}}>
             <LazyComponent height='10vh' width='5vw' threshold={0.9}>
               <Slider mainClass='education-slider-main' containerClass='education-slider-container' childClass='education-slider-child'>
-                <img className='education-photo' src="/images/education-test-1.jpg" alt="Psychologist on main page"/> 
-                <img className='education-photo' src="/images/education-test-2.jpg" alt="Psychologist on main page"/>
+                <img className='education-photo' src="/images/education-test-1.jpg" alt="Psychologist on main page" draggable="false"/> 
+                <img className='education-photo' src="/images/education-test-2.jpg" alt="Psychologist on main page" draggable="false"/>
               </Slider>
             </LazyComponent>
             <BgArrow className='education-bgArrow'/> 
@@ -48,8 +48,8 @@ const Education = () => {
         </LazyComponent>
         <LazyComponent height='20vh' width='5vw' threshold={0.9}>
           <div className='education-photos'>
-            <img className='education-photo' src="/images/education-test-1.jpg" alt="Psychologist on main page"/> 
-            <img className='education-photo' src="/images/education-test-2.jpg" alt="Psychologist on main page"/>
+            <img className='education-photo' src="/images/education-test-1.jpg" alt="Psychologist on main page" draggable="false"/>
+            <img className='education-photo' src="/images/education-test-2.jpg" alt="Psychologist on main page" draggable="false"/>
           </div>
          </LazyComponent>
       </div>

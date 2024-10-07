@@ -7,10 +7,14 @@ const Contacts = () => {
   return (
     <div className='contacts-main'>
       <div className='center'>
+        <LazyComponent height='40px' threshold={0.9}>
           <h1 className='contacts-title'>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</h1>
+        </LazyComponent>
           <div className='contacts-content'>
             <div className='contacts-text'>
-              <p className='contacts-subtitle'>{contactsText.subtitle[0]}</p>
+              <LazyComponent height='40px' threshold={0.9}> 
+                <p className='contacts-subtitle'>{contactsText.subtitle[0]}</p>
+              </LazyComponent>
               <LazyComponent height='20vh' threshold={0.8}>
               <div className='contacts-profiles'>
                 <a 

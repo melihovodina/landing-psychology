@@ -1,6 +1,7 @@
 .contacts-main {
     overflow: hidden;
     position: relative;
+    min-height: 726px;
 }
 
 .contacts-content {
@@ -91,11 +92,15 @@
     position: absolute;
     width: 40vw;
     bottom: -5vh;
-    right: 7vw;
+    right: 27vw;
     z-index: -1;
 }
 
 @media (min-width: 1920px) {
+    .contacts-main {
+        min-height: 805px;
+    }
+
     .contacts-title {
         font-size: 52px;
     }
@@ -121,11 +126,15 @@
 
     .contacts-image {
         bottom: -5vh;
-        right: 5vw;
+        right: 25vw;
     }
 }
 
 @media (min-width: 2560px) {
+    .contacts-main {
+        min-height: 880px;
+    }
+
     .contacts-content {
         justify-content: unset;
         gap: 400px;
@@ -156,11 +165,15 @@
 
     .contacts-image {
         width: 35vw;
-        right: 7vw;
+        right: 25vw;
     }
 }
 
 @media (max-width: 719px) {
+    .contacts-main {
+        min-height: 947px;
+    }
+
     .contacts-content {
         flex-direction: column;
         align-items: center;
@@ -207,6 +220,10 @@
 }
 
 @media (min-width: 720px) and (max-width: 1200px) {
+    .contacts-main {
+        min-height: 651px;
+    }
+
     .contacts-subtitle {
         width: 400px
     }   
