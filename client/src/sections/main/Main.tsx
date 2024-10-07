@@ -6,9 +6,9 @@ import { DeviceContext } from '../../components/contexts/DeviceContext'
 import UpButton from '../../components/upButton/UpButton'
 
 const Main = () => {
-  const [visible, setVisible] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
   const { isMobile } = useContext(DeviceContext)
+  const [visible, setVisible] = useState(isMobile ? true : false);
 
   useEffect(() => {
     const handleScroll = () => {

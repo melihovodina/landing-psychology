@@ -55,38 +55,33 @@ const Slider: FC<SliderProps> = ({
     setTranslateX(0); //сброс смещения
   };
 
-  // Обработчик начала перетаскивания мышью (для десктопов)
   const handleMouseDown = (e: React.MouseEvent) => {
     setIsDragging(true);
-    setStartX(e.clientX); // запоминаем начальную позицию мыши
+    setStartX(e.clientX);
   };
 
-  // Обработчик движения мыши (перетаскивание)
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging) return;
     const currentX = e.clientX;
-    setTranslateX(currentX - startX); // вычисляем смещение
+    setTranslateX(currentX - startX);
   };
 
-  // Обработчик окончания перетаскивания мышью (для десктопов)
   const handleMouseUp = () => {
     setIsDragging(false);
-    // если смещение больше 50 пикселей, изменяем текущий индекс
     if (Math.abs(translateX) > 50) {
       if (translateX < 0 && currentIndex < childrenArray.length / step - 1) {
-        setCurrentIndex(currentIndex + 1); // переход к следующему элементу
+        setCurrentIndex(currentIndex + 1);
       } else if (translateX > 0 && currentIndex > 0) {
-        setCurrentIndex(currentIndex - 1); // переход к предыдущему элементу
+        setCurrentIndex(currentIndex - 1);
       }
     }
-    setTranslateX(0); // сброс смещения
+    setTranslateX(0);
   };
 
-  // Обработчик выхода мыши за пределы слайдера (для остановки перетаскивания)
   const handleMouseLeave = () => {
     if (isDragging) {
       setIsDragging(false);
-      setTranslateX(0); // сброс смещения, если мышь вышла за пределы
+      setTranslateX(0);
     }
   };
 
