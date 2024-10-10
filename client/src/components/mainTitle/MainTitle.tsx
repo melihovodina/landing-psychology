@@ -22,7 +22,7 @@ const MainTitle: FC = () => {
             <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
           </div>
         </div>
-        <img className='mainTitle-photo' src="/images/main.JPG" alt="Psychologist on main page"/>
+        <img className='mainTitle-photo' src="/images/main.webp" alt="Psychologist on main page"/>
       </div>
     );
   }
@@ -35,11 +35,11 @@ const MainTitle: FC = () => {
         <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
       <div className='mainTitle-photo-block'>
-        <img className='mainTitle-photo' src="/images/main.JPG" alt="Psychologist on main page"/>
+        <img className='mainTitle-photo' src="/images/main.webp" alt="Psychologist on main page"/>
       </div> 
-      <img className='mainTitle-image-first' src="/images/main-flower-1.png" alt="first background flower on main page"/>
-      <img className='mainTitle-image-second' src="/images/main-flower-2.png" alt="second background flower on main page"/>
-      <img className='mainTitle-image-third' src="/images/main-flower-3.png" alt="third background flower on main page"/>  
+      <img className='mainTitle-image-first' src="/images/main-flower-1.webp" alt="First background flower on main page"/>
+      <img className='mainTitle-image-second' src="/images/main-flower-2.webp" alt="Second background flower on main page"/>
+      <img className='mainTitle-image-third' src="/images/main-flower-3.webp" alt="Third background flower on main page"/>  
     </div>
   );
 }

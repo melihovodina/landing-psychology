@@ -19,8 +19,8 @@ const MyServices = () => {
           ))}
         </div>
       </div>
-        <img className='myServices-image-first' src="/images/service-flower.png" alt="first background flower on 'My services' page"/> 
-        <img className='myServices-image-second' src="/images/service-flower.png" alt="second background flower on 'My services' page"/>
+        <img className='myServices-image-first' src="/images/service-flower.webp" alt="First background flower on 'My services' page"/> 
+        <img className='myServices-image-second' src="/images/service-flower.webp" alt="Second background flower on 'My services' page"/>
     </div>
   )
 }

@@ -13,7 +13,7 @@ const AboutMe:FC = () => {
       <div className='aboutMe-content center'>
         <div className='aboutMe-top'>
           <LazyComponent height='40vh' threshold={0.4}>
-            <img className='aboutMe-photo-first' src="/images/main.JPG" alt="Psychologist on main page"/> 
+            <img className='aboutMe-photo-first' src="/images/about-me-1.webp" alt="Psychologist on about me page"/> 
           </LazyComponent>  
           <LazyComponent height='40vh' threshold={0.6}>
             <div className='aboutMe-textblock'>
@@ -29,7 +29,7 @@ const AboutMe:FC = () => {
             </div>
           </LazyComponent>
           <LazyComponent height='40vh' threshold={0.6}>  
-            <img className='aboutMe-photo-second' src="/images/main.JPG" alt="Psychologist on main page"/>
+            <img className='aboutMe-photo-second' src="/images/about-me-2.webp" alt="Psychologist on about me page"/>
           </LazyComponent> 
         </div>
       </div>
@@ -42,7 +42,7 @@ const AboutMe:FC = () => {
       <div className='aboutMe-content center'>
         <LazyComponent height='40vh' width='10vw' threshold={0.6}>
         <div className='aboutMe-top'>
-          <img className='aboutMe-photo-first' src="/images/main.JPG" alt="Psychologist on main page"/> 
+          <img className='aboutMe-photo-first' src="/images/about-me-1.webp" alt="Psychologist on about me page"/> 
           <div className='aboutMe-textblock'>
             <h1 className='aboutMe-title'>ОБО МНЕ</h1>
             <p className='aboutMe-text'>{aboutMeText[1]}</p>
@@ -54,7 +54,7 @@ const AboutMe:FC = () => {
           <div className='aboutMe-textblock'>
             <p className='aboutMe-text'>{aboutMeText[1]}</p>
           </div>
-          <img className='aboutMe-photo-second' src="/images/main.JPG" alt="background flower on about me page"/> 
+          <img className='aboutMe-photo-second' src="/images/about-me-2.webp" alt="Psychologist on about me page"/> 
         </div>
         </LazyComponent>
       </div>
