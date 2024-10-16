@@ -1,6 +1,5 @@
 .myServices-main {
     width: 100vw;
-    min-height: 700px;
     background-color: white;
     position: relative;
     display: flex;
@@ -16,7 +15,6 @@
     font-size: 40px;
     font-weight: 400;
     margin-top: 60px;
-    animation: fadeInUp 0.8s ease-out forwards;
     margin-bottom: 0;
 }
 
@@ -60,10 +58,6 @@
 }
 
 @media (max-width: 719px) {
-    .myServices-main {
-        min-height: 1270px;
-    }
-
     .myServices-content {
         display: flex;
         text-align: justify;
@@ -81,13 +75,6 @@
         margin: 0;
     }
     
-    .myServices-image-first,
-    .myServices-image-second {
-        animation: fadeIn 2s ease-out forwards;
-        animation-delay: 0.2s;
-        opacity: 0;
-    }
-    
     .myServices-image-first {
         width: 90%;
         bottom: 180px;
@@ -103,10 +90,6 @@
 }
 
 @media (min-width: 720px) and (max-width: 1200px) {
-    .myServices-main {
-        min-height: 0;
-    }
-
     .myServices-title {
         margin-top: 60px;
     }

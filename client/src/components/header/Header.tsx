@@ -15,7 +15,7 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ block: 'start' });
+      section.scrollIntoView({ behavior: 'smooth' });
       if (isMobile) {
         setIsOpen(false);
       }

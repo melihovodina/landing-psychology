@@ -1,7 +1,6 @@
 .reviews-main {
     width: 100vw;
     height: auto;
-    min-height: 635px;
     margin: 0;
     background-color: #F5EDE8;
 }
@@ -16,7 +15,6 @@
     font-size: 40px;
     margin-top: 60px;
     margin-bottom: 40px;
-    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .reviews-slider-main {
@@ -25,7 +23,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 120px;
-    animation: fadeInUp 0.8s ease-out forwards;
     padding: 10px;
 }
 
@@ -64,10 +61,6 @@
 }
 
 @media (max-width: 719px) {
-    .reviews-main {
-        min-height: 515px;
-    }
-
     .reviews-slider-main {
         margin-bottom: 0px;
         padding: 10px 0px;

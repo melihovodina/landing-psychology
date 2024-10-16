@@ -85,6 +85,24 @@
     animation: close 0.8s ease-in-out forwards;
 }
 
+@keyframes open {
+    0% {
+      top: -100vh;
+    }
+    100% {
+      top: 0%
+    }
+}
+  
+@keyframes close {
+    0% {
+      top: 0%
+    }
+    100% {
+      top: -100vh
+    }
+}
+
 .header-dropdown-menu {
     width: 97%;
     height: auto;

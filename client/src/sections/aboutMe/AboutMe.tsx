@@ -1,6 +1,5 @@
 import React, { FC, useContext } from 'react'
 import { aboutMeText } from '../../оther/texts'
-import LazyComponent from '../../components/LazyComponent'
 import { DeviceContext } from '../../components/contexts/DeviceContext'
 import './aboutMe.css'
 
@@ -12,25 +11,17 @@ const AboutMe:FC = () => {
       <div className='aboutMe-main'>
       <div className='aboutMe-content center'>
         <div className='aboutMe-top'>
-          <LazyComponent height='40vh' threshold={0.4}>
-            <img className='aboutMe-photo-first' src="/images/about-me-1.webp" alt="Psychologist on about me page"/> 
-          </LazyComponent>  
-          <LazyComponent height='40vh' threshold={0.6}>
-            <div className='aboutMe-textblock'>
-              <h1 className='aboutMe-title'>ОБО МНЕ</h1>
-              <p className='aboutMe-text'>{aboutMeText[1]}</p>
-            </div>
-          </LazyComponent>  
+          <img className='aboutMe-photo-first' src="/images/knees.webp" alt="Psychologist on about me page"/> 
+          <div className='aboutMe-textblock'>
+            <h1 className='aboutMe-title'>ОБО МНЕ</h1>
+            <p className='aboutMe-text'>{aboutMeText[1]}</p>
+          </div> 
         </div>
         <div className='aboutMe-bottom'>
-          <LazyComponent height='40vh' threshold={0.4}>
-            <div className='aboutMe-textblock'>
-              <p className='aboutMe-text'>{aboutMeText[1]}</p>
-            </div>
-          </LazyComponent>
-          <LazyComponent height='40vh' threshold={0.6}>  
-            <img className='aboutMe-photo-second' src="/images/about-me-2.webp" alt="Psychologist on about me page"/>
-          </LazyComponent> 
+          <div className='aboutMe-textblock'>
+            <p className='aboutMe-text'>{aboutMeText[1]}</p>
+          </div>
+          <img className='aboutMe-photo-second' src="/images/hair.webp" alt="Psychologist on about me page"/>
         </div>
       </div>
     </div>
@@ -40,23 +31,19 @@ const AboutMe:FC = () => {
   return (
     <div className='aboutMe-main'>
       <div className='aboutMe-content center'>
-        <LazyComponent height='40vh' width='10vw' threshold={0.6}>
         <div className='aboutMe-top'>
-          <img className='aboutMe-photo-first' src="/images/about-me-1.webp" alt="Psychologist on about me page"/> 
+          <img className='aboutMe-photo-first' src="/images/knees.webp" alt="Psychologist on about me page"/> 
           <div className='aboutMe-textblock'>
             <h1 className='aboutMe-title'>ОБО МНЕ</h1>
             <p className='aboutMe-text'>{aboutMeText[1]}</p>
           </div>
         </div>
-        </LazyComponent>
-        <LazyComponent height='40vh' width='10vw' threshold={0.6}>
         <div className='aboutMe-bottom'>
           <div className='aboutMe-textblock'>
             <p className='aboutMe-text'>{aboutMeText[1]}</p>
           </div>
-          <img className='aboutMe-photo-second' src="/images/about-me-2.webp" alt="Psychologist on about me page"/> 
+          <img className='aboutMe-photo-second' src="/images/hair.webp" alt="Psychologist on about me page"/> 
         </div>
-        </LazyComponent>
       </div>
     </div>
   )
