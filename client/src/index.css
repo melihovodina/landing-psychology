@@ -33,7 +33,7 @@ html, body {
   src: url(../public/fonts/Arsenal-Regular.ttf);
 }
 
-p,span,h2,h3,button {
+p,span,h2,h3,button, ul, li {
   font-family: 'Arsenal';
 }
 

@@ -84,15 +84,7 @@
     margin-bottom: 20px;
 }
 
-@media (min-width: 1920px) {
-    .education-title {
-        font-size: 52px;
-    }
-    
-    .education-subtitle {
-        font-size: 30px;
-    }
-    
+@media (min-width: 1900px) {
     .education-image-first {
         height: 70vh;
         width:auto;
@@ -109,15 +101,7 @@
     }
 }
 
-@media (min-width: 2560px) {
-    .education-title {
-        font-size: 60px;
-    }
-    
-    .education-subtitle {
-        font-size: 40px;
-    }
-
+@media (min-width: 2500px) {
     .education-image-first {
         height: 65vh;
         width:auto;

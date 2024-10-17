@@ -48,18 +48,6 @@
     margin-bottom: 20px;
 }
 
-@media (min-width: 1920px) {
-    .reviews-title {
-        font-size: 52px;
-    }
-}
-
-@media (min-width: 2560px) {
-    .reviews-title {
-        font-size: 60px;
-    }
-}
-
 @media (max-width: 719px) {
     .reviews-slider-main {
         margin-bottom: 0px;

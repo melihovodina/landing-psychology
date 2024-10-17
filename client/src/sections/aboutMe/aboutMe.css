@@ -16,7 +16,6 @@
     justify-content: center;
     margin-top: 60px;
     gap: 40px;
-    margin-bottom: 40px;
 }
 
 .aboutMe-bottom {
@@ -43,34 +42,45 @@
 .aboutMe-text {
     font-size: 18px;
     margin: 0;
+    margin-bottom: 5px;
+}
+
+ul.aboutMe-text {
+    list-style: circle;
+    padding-left: 25px;
+}
+
+.aboutMe-photo-block-first,
+.aboutMe-photo-block-second {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #E8DDD8;
+    background: #F5EDE8;
+    box-shadow: 0px 2px 10px 3px #E8DDD8;   
+}
+
+.aboutMe-photo-block-first {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.aboutMe-photo-block-second {
+    
 }
 
 .aboutMe-photo-first,
 .aboutMe-photo-second {
     width: 15vw;
     height: fit-content;
-    margin-top: 5px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
-@media (min-width: 1920px) {
-    .aboutMe-title {
-        font-size: 52px;
-    }
-    
-    .aboutMe-text {
-        font-size: 24px;
-    }
-}
-
-@media (min-width:2560px) {
-    .aboutMe-title {
-        font-size: 60px;
-    }
-    
-    .aboutMe-text {
-        font-size: 30px;
-    }
+.aboutMe-photo-second {
+    margin-top: -190px;
 }
 
 @media (max-width: 719px) {

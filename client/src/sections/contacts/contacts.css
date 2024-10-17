@@ -91,25 +91,7 @@
     z-index: -1;
 }
 
-@media (min-width: 1920px) {
-    .contacts-title {
-        font-size: 52px;
-    }
-
-    .contacts-subtitle {
-        font-size: 24px;
-        width: 650px;
-    }
-
-    .contacts-adress {
-        font-size: 30px;
-    }
-
-    .contacts-icon {
-        width: 50px;
-        height: 50px;
-    }
-
+@media (min-width: 1900px) {
     .contacts-photo {
         width: 450px;
         margin-top: -95px;
@@ -121,23 +103,14 @@
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2500px) {
     .contacts-content {
         justify-content: unset;
         gap: 400px;
     }
 
-    .contacts-title {
-        font-size: 60px;
-    }
-
     .contacts-subtitle {
-        font-size: 30px;
         width: 800px;
-    }
-
-    .contacts-adress {
-        font-size: 40px;
     }
 
     .contacts-icon {

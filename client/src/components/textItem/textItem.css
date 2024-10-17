@@ -10,7 +10,7 @@
 }
 
 .serviceUnit-block {
-    max-width: 20vw;
+    max-width: 18vw;
     min-height: 350px;
     height: fit-content;
     display: block;
@@ -31,31 +31,15 @@
     margin-top: 10px;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
     .serviceUnit-block {
-        min-height: 500px;
-    }
-
-    .serviceUnit-title {
-        font-size: 30px;
-    }
-
-    .serviceUnit-text {
-        font-size: 24px;
+        max-width: 16vw;
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2500px) {
     .serviceUnit-block {
-        min-height: 600px;
-    }
-
-    .serviceUnit-title {
-        font-size: 40px;
-    }
-
-    .serviceUnit-text {
-        font-size: 30px;
+        max-width: 12vw;
     }
 }
 
