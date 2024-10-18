@@ -15,7 +15,17 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 60px;
-    gap: 40px;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.aboutMe-center {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15vh;
+    margin-bottom: 40px;
 }
 
 .aboutMe-bottom {
@@ -24,12 +34,12 @@
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
 }
 
 .aboutMe-textblock {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: justify;
 }
 
@@ -42,7 +52,10 @@
 .aboutMe-text {
     font-size: 18px;
     margin: 0;
-    margin-bottom: 5px;
+}
+
+p.aboutMe-text {
+    margin-bottom: 20px;
 }
 
 ul.aboutMe-text {
@@ -60,27 +73,24 @@ ul.aboutMe-text {
     border-radius: 15px;
     border: 1px solid #E8DDD8;
     background: #F5EDE8;
-    box-shadow: 0px 2px 10px 3px #E8DDD8;   
-}
-
-.aboutMe-photo-block-first {
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
-
-.aboutMe-photo-block-second {
-    
+    box-shadow: 0px 2px 10px 3px #E8DDD8; 
 }
 
 .aboutMe-photo-first,
 .aboutMe-photo-second {
-    width: 15vw;
-    height: fit-content;
+    width: 350px;
+    height: 450px;
     border-radius: 10px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
-.aboutMe-photo-second {
-    margin-top: -190px;
+@media (min-width: 1900px) {
+    .aboutMe-photo-first,
+    .aboutMe-photo-second {
+        width: 400px;
+        height: 500px;
+    }
 }
 
 @media (max-width: 719px) {
@@ -100,40 +110,44 @@ ul.aboutMe-text {
         flex-direction: column;
         align-items: center;
         gap: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     
     .aboutMe-title {
         font-size: 32px;
-        margin: 0 0 10px 0;
+        margin: 0 0 20px 0;
     }
     
     .aboutMe-text {
         font-size: 18px;
     }
+
+    ul.aboutMe-text {
+        margin-bottom: 20px;
+    }
     
     .aboutMe-photo-first,
     .aboutMe-photo-second {
-        width: 350px;
+        width: 345px;
         height: auto;
-        margin-top: 20px;
     }
 }
 
 @media (min-width: 720px) and (max-width: 1200px) {    
     .aboutMe-top {
         align-items: center;
+        gap: 40px;
     }
     
-    .aboutMe-bottom {
-        align-items: center;
+    .aboutMe-center {
+        margin-top: -50px;
+        justify-content: unset;
+        gap: 40px;
     }
     
     .aboutMe-photo-first,
     .aboutMe-photo-second {
         width: 250px;
-        height: auto;
-        margin-top: 5px;
-        border-radius: 15px;
+        height: 350px;
     }
 }

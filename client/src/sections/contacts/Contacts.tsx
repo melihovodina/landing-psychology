@@ -53,7 +53,9 @@ const Contacts = () => {
               </a>
             </div>
           </div>  
-            <img className='contacts-photo' src="/images/phone.webp" alt="Psychologist on contacts page"/>
+            <div className='contacts-photo-block'>
+              <img className='contacts-photo' src="/images/phone.webp" alt="Psychologist on contacts page"/>
+            </div>
         </div>
       </div>
       <img className='contacts-image' src="/images/contacts-flower.webp" alt="Background flower on main page"/>

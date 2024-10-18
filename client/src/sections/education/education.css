@@ -81,7 +81,7 @@
 }
 
 .education-bgArrow {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 1900px) {
@@ -140,7 +140,7 @@
     
     .education-photo {
         width: 280px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     
     .education-image-first {
