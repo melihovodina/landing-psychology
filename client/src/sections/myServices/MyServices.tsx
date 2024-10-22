@@ -10,7 +10,7 @@ const MyServices = () => {
           <h1 className='myServices-title'>МОИ УСЛУГИ</h1>
         <div className='servicesList-main'>
           {servicesText.map((item) => (
-              <TextItem item={item} key={item.index} animation/>
+              <TextItem item={item} key={item.index}/>
           ))}
         </div>
       </div>

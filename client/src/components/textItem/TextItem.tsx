@@ -1,23 +1,21 @@
 import React, { FC } from 'react';
 import './textItem.css'
 
-interface ServiceUnitProps {
-  item: { index: number; title: string; text: string };
-  animation?: boolean
+interface TextItemProps {
+  item: { index: number; title: string; text: string[] };
 }
 
-const ServiceUnit: FC<ServiceUnitProps> = ({ item, animation = false }) => {
-  const animationDuration = item.index*0.5
-  const style = animation ? { '--animation-duration': `${animationDuration}s` } : {}
+const TextItem: FC<TextItemProps> = ({ item }) => {
 
   return (
-    <div className='serviceUnit-rear-block' style={style as React.CSSProperties}>
-        <div className='serviceUnit-block'>
-          <h2 className='serviceUnit-title'>{item.title}</h2>
-          <p className='serviceUnit-text'>{item.text}</p>
+    <div className='textItem-rear-block'>
+        <div className='textItem-block'>
+          <h2 className='textItem-title'>{item.title}</h2>
+          <p className='textItem-text'>{item.text[0]}</p>
+          <p className='textItem-text'>{item.text[1]}</p>
         </div>
     </div>
   );
 };
 
-export default ServiceUnit;
+export default TextItem;
