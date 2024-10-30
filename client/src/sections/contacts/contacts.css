@@ -196,13 +196,15 @@
 @media (min-width: 720px) and (max-width: 1200px) {
     .contacts-subtitle {
         width: 400px;
-        margin-right: 50px;
-    }   
+        margin-right: 0px;
+    }
+
+    .contacts-photo-block {
+        margin-top: 0;
+    }
 
     .contacts-photo {
         width: 300px;
-        margin-top: 0px;
-        margin-bottom: 50px;
     }
 
     .contacts-image {

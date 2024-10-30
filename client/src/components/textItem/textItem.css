@@ -10,6 +10,7 @@
 
 .textItem-block {
     width: 20vw;
+    min-height: 350px;
     display: block;
     border-radius: 10px;
     border: 1px solid #D2BEB5;
@@ -45,8 +46,7 @@
         width: 310px;
         min-height: 350px;
         margin-bottom: 30px;
-        animation: fadeInUp 0.8s ease-out forwards;
-        padding: 1px;
+        padding: 5px 1px;
     }
     
     .textItem-block {
@@ -66,7 +66,6 @@
 @media (min-width: 720px) and (max-width: 1200px) {
     .textItem-block {
         width: 300px;
-        height: fit-content;
         min-height: 350px;
     }
     

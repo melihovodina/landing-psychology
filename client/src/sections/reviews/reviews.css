@@ -42,6 +42,10 @@
     width:max-content;
 }
 
+.reviews-review {
+    width: 18vw;
+}
+
 .reviews-bgArrow {
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +66,10 @@
 
     .reviews-slider-child {
         min-width: 100%;
+    }
+
+    .reviews-review {
+        width: 300px;
     }
 
     .reviews-title {
@@ -87,5 +95,9 @@
 
     .reviews-slider-child {
         min-width: 50%;
+    }
+
+    .reviews-review {
+        width: 300px;
     }
 }

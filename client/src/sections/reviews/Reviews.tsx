@@ -15,7 +15,7 @@ const Reviews = () => {
         <h1 className='reviews-title'>ОТЗЫВЫ</h1>
         <Slider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child' visibleItems={3}>
           {reviewsText.map((item) => (
-              <TextItem item={item} key={item.index}/>
+              <TextItem item={item} key={item.index} blockClass='reviews-review'/>
           ))}
         </Slider>
         { isMobile || isTablet ? <BgArrow  className='reviews-bgArrow'/> : null }

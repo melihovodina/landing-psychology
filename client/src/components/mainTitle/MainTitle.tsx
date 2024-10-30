@@ -16,8 +16,9 @@ const MainTitle: FC = () => {
     return (
       <div className='mainTitle-main'>
         <div className='mainTitle-block'>
-          <h2 className="mainTitle-subtitle">ПСИХОЛОГ</h2>
+          <h2 className="mainTitle-subtitle-top">ПСИХОЛОГ</h2>
           <h1 className="mainTitle-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
+          <h2 className='mainTitle-subtitle-bottom'>ПОМОГАЮ ЖИТЬ</h2>
           <div className='mainTitle-button-box'>
             <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
           </div>
@@ -32,8 +33,9 @@ const MainTitle: FC = () => {
   return (
     <div className='mainTitle-main'>
       <div className='mainTitle-block'>
-        <h2 className="mainTitle-subtitle">ПСИХОЛОГ</h2>
+        <h2 className="mainTitle-subtitle-top">ПСИХОЛОГ</h2>
         <h1 className="mainTitle-title">ОЛЬГА СТРЕЛЬЦОВА</h1>
+        <h2 className='mainTitle-subtitle-bottom'>ПОМОГАЮ ЖИТЬ</h2>
         <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
       <div className='mainTitle-photo-block'>
