@@ -79,12 +79,20 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
 
   return (
     <header className="header center">
+      <span className="header-button" onClick={() => scrollToSection('about')}>
+        Обо мне
+      </span>
+      <SeparateFlower />
       <span className="header-button" onClick={() => scrollToSection('services')}>
         Мои услуги
       </span>
       <SeparateFlower />
-      <span className="header-button" onClick={() => scrollToSection('about')}>
-        Обо мне
+      <span className="header-button" onClick={() => scrollToSection('help')}>
+        С чем я могу помочь
+      </span>
+      <SeparateFlower />
+      <span className="header-button" onClick={() => scrollToSection('principles')}>
+        Принципы работы
       </span>
       <SeparateFlower />
       <span className="header-button" onClick={() => scrollToSection('education')}>
