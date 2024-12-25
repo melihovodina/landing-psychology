@@ -4,6 +4,7 @@
     margin: 0;
     background-color: #F5EDE8;
     overflow-x: hidden;
+    
 }
 
 .main-center {
@@ -14,7 +15,8 @@
 
 @media (max-width: 719px) {
     .main {
-        min-height: 80vh;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .main-center {

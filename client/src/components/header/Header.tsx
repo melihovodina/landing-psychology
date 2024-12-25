@@ -5,7 +5,7 @@ import './header.css';
 import Cross from '../svg/Cross';
 
 const Header: FC<{visible: boolean}> = ({visible}) => {
-  const { isMobile } = useContext(DeviceContext);
+  const { isMobile, isTablet } = useContext(DeviceContext);
   const [isOpen, setIsOpen] = useState(false);
 
   const openHeader = () => {
@@ -22,7 +22,7 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
     }
   };
 
-  if (isMobile) {
+  if (isMobile || isTablet) {
     return (
       <>
         <div className={`overlay ${isOpen ? 'overlay-open' : 'overlay-close'}`} />
@@ -37,14 +37,26 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
               </div>
               <div className="header-option">
                 <SeparateFlower />
+                <span className="header-button" onClick={() => scrollToSection('about')}>
+                  Обо мне
+                </span>
+              </div>
+              <div className="header-option">
+                <SeparateFlower />
                 <span className="header-button" onClick={() => scrollToSection('services')}>
                   Мои услуги
                 </span>
               </div>
               <div className="header-option">
                 <SeparateFlower />
-                <span className="header-button" onClick={() => scrollToSection('about')}>
-                  Обо мне
+                <span className="header-button" onClick={() => scrollToSection('services')}>
+                  С чем я могу помочь
+                </span>
+              </div>
+              <div className="header-option">
+                <SeparateFlower />
+                <span className="header-button" onClick={() => scrollToSection('services')}>
+                  Принцип работы
                 </span>
               </div>
               <div className="header-option">

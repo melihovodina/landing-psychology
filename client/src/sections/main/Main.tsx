@@ -7,20 +7,20 @@ import UpButton from '../../components/upButton/UpButton'
 
 const Main = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const { isMobile } = useContext(DeviceContext)
+  const { isMobile, isTablet } = useContext(DeviceContext)
   const [visible, setVisible] = useState(isMobile ? true : false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
       if (currentScrollPosition > scrollPosition) {
-        if(isMobile) {
+        if(isMobile || isTablet) {
           setVisible(false);
         } else {
           setVisible(true);
         }
       } else {
-        if(isMobile) {
+        if(isMobile || isTablet) {
           setVisible(true);
         } else if (currentScrollPosition < 640) {
           setVisible(false);
@@ -32,7 +32,7 @@ const Main = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollPosition, isMobile]);
+  }, [scrollPosition, isMobile, isTablet]);
 
   return (
     <div className='main'>

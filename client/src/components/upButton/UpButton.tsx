@@ -3,7 +3,7 @@ import './upButton.css'
 import { DeviceContext } from '../contexts/DeviceContext';
 
 const UpButton: FC<{visible: boolean}> = ({visible}) => {
-  const { isMobile } = useContext(DeviceContext)
+  const { isMobile, isTablet } = useContext(DeviceContext)
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -12,7 +12,7 @@ const UpButton: FC<{visible: boolean}> = ({visible}) => {
     }
   };
 
-  if(!isMobile) {
+  if(!isMobile && !isTablet) {
     return (
       <svg 
         xmlns="http://www.w3.org/2000/svg" 

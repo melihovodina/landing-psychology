@@ -229,11 +229,14 @@
         animation-delay: 0.6s;
     }
 
+    .mainTitle-button:hover {
+        background-color: #DFCFC8;
+    }
+
     .mainTitle-photo-block {
         height: fit-content;
         animation: fadeInUp 0.8s ease-out forwards;
         margin: auto;
-        margin-bottom: 50px;
     }
 
     .mainTitle-photo {
@@ -249,7 +252,7 @@
     }
 
     .mainTitle-block {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     
     .mainTitle-title {
