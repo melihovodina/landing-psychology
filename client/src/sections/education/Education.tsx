@@ -19,8 +19,8 @@ const Education = () => {
             </div>
           <div style={{display: 'flex',flexDirection: 'column', justifyContent:'center', alignItems: 'center'}}>
               <Slider mainClass='education-slider-main' containerClass='education-slider-container' childClass='education-slider-child'>
-                <img className='education-photo' src="/images/education-test-1.jpg" alt="Diploma on education page" draggable="false"/> 
-                <img className='education-photo' src="/images/education-test-2.jpg" alt="Certificate on education page" draggable="false"/>
+                <img className='education-photo' src="/images/diploma.webp" alt="Diploma on education page" draggable="false"/> 
+                <img className='education-photo' src="/images/first-certificate.webp" alt="Certificate on education page" draggable="false"/>
               </Slider>
             <BgArrow className='education-bgArrow'/> 
           </div> 
@@ -40,8 +40,8 @@ const Education = () => {
             <h2 className='education-subtitle'>{educationText[1]}</h2>
           </div>
           <div className='education-photos'>
-            <img className='education-photo' src="/images/education-test-1.jpg" alt="Diploma on education page" draggable="false"/> 
-            <img className='education-photo' src="/images/education-test-2.jpg" alt="Certificate on education page" draggable="false"/>
+            <img className='education-photo' src="/images/diploma.webp" alt="Diploma on education page" draggable="false"/> 
+            <img className='education-photo' src="/images/first-certificate.webp" alt="Certificate on education page" draggable="false"/>
           </div>
       </div>
       <img className='education-image-first' src="/images/education-flower-1.webp" alt="First background flower on education page"/>

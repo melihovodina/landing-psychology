@@ -24,7 +24,7 @@ const MainTitle: FC = () => {
           </div>
         </div>
         <div className='mainTitle-photo-block'>
-          <img className='mainTitle-photo' src="/images/main.webp" alt="Psychologist on main page"/>
+          <img className='mainTitle-photo' src="/images/white.webp" alt="Psychologist on main page"/>
         </div>
       </div>
     );
@@ -39,7 +39,7 @@ const MainTitle: FC = () => {
         <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
       <div className='mainTitle-photo-block'>
-        <img className='mainTitle-photo' src="/images/main.webp" alt="Psychologist on main page"/>
+        <img className='mainTitle-photo' src="/images/white.webp" alt="Psychologist on main page"/>
       </div> 
       <img className='mainTitle-image-first' src="/images/main-flower-1.webp" alt="First background flower on main page"/>
       <img className='mainTitle-image-second' src="/images/main-flower-2.webp" alt="Second background flower on main page"/>
