@@ -10,7 +10,7 @@ interface PhotoFrameProps{
 }
 
 const PhotoFrame: FC<PhotoFrameProps> = ({children, customClassName, color}) => {
-  const className: string = `frame ${color} ${customClassName}`
+  const className: string = `${customClassName} frame ${color}`
 
   return (
     <div className={className}>
