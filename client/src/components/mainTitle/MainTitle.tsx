@@ -1,6 +1,7 @@
 import React, { FC, useContext } from 'react';
 import './mainTitle.css';
 import { DeviceContext } from '../contexts/DeviceContext';
+import PhotoFrame from '../photoFrame/PhotoFrame';
 
 const MainTitle: FC = () => {
   const {isMobile} = useContext(DeviceContext)
@@ -38,9 +39,9 @@ const MainTitle: FC = () => {
         <h2 className='mainTitle-subtitle-bottom'>ПОМОГАЮ ЖИТЬ</h2>
         <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
-      <div className='mainTitle-photo-block'>
+      <PhotoFrame>
         <img className='mainTitle-photo' src="/images/white.webp" alt="Psychologist on main page"/>
-      </div> 
+      </PhotoFrame> 
       <img className='mainTitle-image-first' src="/images/main-flower-1.webp" alt="First background flower on main page"/>
       <img className='mainTitle-image-second' src="/images/main-flower-2.webp" alt="Second background flower on main page"/>
       <img className='mainTitle-image-third' src="/images/main-flower-3.webp" alt="Third background flower on main page"/>  

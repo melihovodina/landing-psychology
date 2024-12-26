@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './index.css';
 import Main from './sections/main/Main';
 import MyServices from './sections/myServices/MyServices';
 import AboutMe from './sections/aboutMe/AboutMe';
@@ -8,6 +7,7 @@ import Reviews from './sections/reviews/Reviews';
 import Contacts from './sections/contacts/Contacts';
 import Footer from './components/footer/Footer';
 import { CgSpinner } from 'react-icons/cg';
+import './index.css';
 
 function App() {
   const [loading, setLoading] = useState(true);

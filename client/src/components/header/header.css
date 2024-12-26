@@ -194,7 +194,7 @@
     }
 }
 
-@media (min-width: 719px) {
+@media (min-width: 719px) and (max-width: 1200px) {
     .header {
         width: 100%;
         justify-content: end;
