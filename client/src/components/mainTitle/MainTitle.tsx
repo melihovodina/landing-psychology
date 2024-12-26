@@ -24,9 +24,9 @@ const MainTitle: FC = () => {
             <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
           </div>
         </div>
-        <div className='mainTitle-photo-block'>
+        <PhotoFrame>
           <img className='mainTitle-photo' src="/images/white.webp" alt="Psychologist on main page"/>
-        </div>
+        </PhotoFrame>
       </div>
     );
   }

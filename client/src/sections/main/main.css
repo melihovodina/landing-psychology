@@ -15,7 +15,7 @@
 
 @media (max-width: 719px) {
     .main {
-        height: 100vh;
+        height: fit-content;
         overflow: hidden;
     }
 
@@ -26,6 +26,6 @@
 
 @media (min-width: 720px) and (max-width: 1200px) {
     .main {
-        min-height: 0;
+        height: fit-content;
     }
 }

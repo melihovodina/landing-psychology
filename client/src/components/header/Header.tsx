@@ -16,7 +16,7 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      if (isMobile) {
+      if (isMobile || isTablet) {
         setIsOpen(false);
       }
     }
