@@ -9,6 +9,7 @@
     flex-direction: row;
     gap: 40px;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .aboutMe-textblock {
@@ -35,6 +36,12 @@
     border-radius: 10px;
     object-fit: cover;
     object-position: bottom;
+}
+
+.aboutMe-tabletRow {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 @media (min-width: 1900px) {
@@ -86,20 +93,13 @@
 }
 
 @media (min-width: 720px) and (max-width: 1200px) {    
-    .aboutMe-top {
-        align-items: center;
-        gap: 40px;
+    .aboutMe-content {
+        flex-direction: column;
+        gap: 20px;
     }
-    
-    .aboutMe-center {
-        margin-top: -50px;
-        justify-content: unset;
-        gap: 40px;
-    }
-    
-    .aboutMe-photo-first,
-    .aboutMe-photo-second {
-        width: 250px;
-        height: 350px;
+
+    .aboutMe-photo {
+        width: 300px;
+        height: 370px;
     }
 }

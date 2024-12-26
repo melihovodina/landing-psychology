@@ -5,7 +5,7 @@ import './aboutMe.css'
 import PhotoFrame from '../../components/photoFrame/PhotoFrame'
 
 const AboutMe:FC = () => {
-  const { isMobile } = useContext(DeviceContext)
+  const { isMobile, isTablet } = useContext(DeviceContext)
   
   if(isMobile) {
     return (
@@ -46,6 +46,28 @@ const AboutMe:FC = () => {
     )
   }
 
+  if(isTablet) {
+    return (
+      <div className='aboutMe-main'>
+        <div className='aboutMe-content center'>
+          <h1 className='aboutMe-title'>ОБО МНЕ</h1>
+          <div className='aboutMe-tabletRow'>
+            <PhotoFrame customClassName='aboutMe-frame' color='white'>
+              <img className='aboutMe-photo' src="/images/hair.webp" alt="Psychologist on about me page"/> 
+            </PhotoFrame>
+            <div className='aboutMe-textblock'>
+              <p className='aboutMe-text'>{aboutMeText[0]}</p>
+              <p className='aboutMe-text'>{aboutMeText[1]}</p>
+              <p className='aboutMe-text'>{aboutMeText[2]}</p>
+              <p className='aboutMe-text'>{aboutMeText[3]}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+
   return (
     <div className='aboutMe-main'>
       <div className='aboutMe-content center'>
@@ -54,10 +76,10 @@ const AboutMe:FC = () => {
         </PhotoFrame>
         <div className='aboutMe-textblock'>
           <h1 className='aboutMe-title'>ОБО МНЕ</h1>
-            <p className='aboutMe-text'>{aboutMeText[0]}</p>
-            <p className='aboutMe-text'>{aboutMeText[1]}</p>
-            <p className='aboutMe-text'>{aboutMeText[2]}</p>
-            <p className='aboutMe-text'>{aboutMeText[3]}</p>
+          <p className='aboutMe-text'>{aboutMeText[0]}</p>
+          <p className='aboutMe-text'>{aboutMeText[1]}</p>
+          <p className='aboutMe-text'>{aboutMeText[2]}</p>
+          <p className='aboutMe-text'>{aboutMeText[3]}</p>
         </div>
       </div>
     </div>
