@@ -54,6 +54,12 @@
     background-color: #71A5BC;
 }
 
+.mainTitle-frame {
+    animation: fadeInRight 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
 .mainTitle-photo {
     height: 85vh;
     margin: 0;
@@ -217,10 +223,10 @@
         background-color: #DFCFC8;
     }
 
-    .mainTitle-photo-block {
-        height: fit-content;
+    .mainTitle-frame {
         animation: fadeInUp 0.8s ease-out forwards;
         margin: auto;
+        margin-bottom: 50px;
     }
 
     .mainTitle-photo {
@@ -241,6 +247,14 @@
     
     .mainTitle-title {
         margin: 10px 0 0 0;
+    }
+
+    .mainTitle-frame {
+        width: 450px;
+        align-self: flex-end;
+        padding: 10px;
+        display:block;
+        margin: 50px 0px;
     }
 
     .mainTitle-photo {

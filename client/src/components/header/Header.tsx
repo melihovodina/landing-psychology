@@ -6,10 +6,14 @@ import Cross from '../svg/Cross';
 
 const Header: FC<{visible: boolean}> = ({visible}) => {
   const { isMobile, isTablet } = useContext(DeviceContext);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean | undefined>();
 
   const openHeader = () => {
-    setIsOpen(!isOpen);
+    if(isOpen === undefined) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(!isOpen)
+    }
   };
 
   const scrollToSection = (id: string) => {
@@ -27,7 +31,7 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
       <>
         <div className={`overlay ${isOpen ? 'overlay-open' : 'overlay-close'}`} />
         <header className="header">
-          <div className={`header-rear-block ${isOpen ? 'header-open' : 'header-close'}`}>
+          <div className={`header-rear-block ${isOpen === undefined ? '' : isOpen ? 'header-open' : 'header-close'}`}>
             <div className="header-dropdown-menu">
               <div className='header-dropdown-menu-row'>
                 <h1 className="header-title" onClick={() => scrollToSection('main')}>ОЛЬГА СТРЕЛЬЦОВА</h1>

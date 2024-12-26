@@ -58,11 +58,11 @@ function App() {
         <section id="main">
           <Main />
         </section>
-        <section id="services">
-          <MyServices />
-        </section>
         <section id="about">
           <AboutMe />
+        </section>
+        <section id="services">
+          <MyServices />
         </section>
         <section id="education">
           <Education />

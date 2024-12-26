@@ -87,18 +87,22 @@
 @keyframes open {
     0% {
       top: -100vh;
+      opacity: 1;
     }
     100% {
       top: 0%;
+      opacity: 1;
     }
 }
   
 @keyframes close {
     0% {
       top: 0%;
+      opacity: 1;
     }
     100% {
       top: -100vh;
+      opacity: 1;
     }
 }
 

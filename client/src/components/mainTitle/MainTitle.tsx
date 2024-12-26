@@ -24,7 +24,7 @@ const MainTitle: FC = () => {
             <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
           </div>
         </div>
-        <PhotoFrame>
+        <PhotoFrame customClassName='mainTitle-frame' color='beige'>
           <img className='mainTitle-photo' src="/images/white.webp" alt="Psychologist on main page"/>
         </PhotoFrame>
       </div>
@@ -39,7 +39,7 @@ const MainTitle: FC = () => {
         <h2 className='mainTitle-subtitle-bottom'>ПОМОГАЮ ЖИТЬ</h2>
         <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
-      <PhotoFrame>
+      <PhotoFrame customClassName='mainTitle-frame' color='beige'>
         <img className='mainTitle-photo' src="/images/white.webp" alt="Psychologist on main page"/>
       </PhotoFrame> 
       <img className='mainTitle-image-first' src="/images/main-flower-1.webp" alt="First background flower on main page"/>
