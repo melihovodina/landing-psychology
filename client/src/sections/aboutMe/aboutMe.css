@@ -2,6 +2,8 @@
     width: 100%;
     background-color: white;
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 .aboutMe-content {
@@ -26,8 +28,8 @@
 
 .aboutMe-text {
     font-size: 18px;
-    margin: 0 10px 0 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    text-align: justify;
 }
 
 .aboutMe-photo {
@@ -36,6 +38,15 @@
     border-radius: 10px;
     object-fit: cover;
     object-position: bottom;
+}
+
+.aboutMe-image {
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    right: 10%;
+    bottom: 0;
+    z-index: -1;
 }
 
 .aboutMe-tabletRow {
@@ -47,47 +58,34 @@
 @media (min-width: 1900px) {
     .aboutMe-photo {
         width: 30vw;
-        height: 60vh;
+        height: 65vh;
     }
 }
 
 @media (max-width: 719px) {
     .aboutMe-content {
         flex-direction: column;
-    }
-    
-    .aboutMe-top {
-        flex-direction: column-reverse;
-        align-items: center;
         margin-top: 40px;
-        gap: 0px;
-        margin-bottom: 20px;
-    }
-    
-    .aboutMe-bottom {
-        flex-direction: column;
-        align-items: center;
-        gap: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        gap: 0;
     }
     
     .aboutMe-title {
         font-size: 32px;
-        margin: 0 0 20px 0;
     }
     
     .aboutMe-text {
         font-size: 18px;
     }
 
-    ul.aboutMe-text {
+    .aboutMe-frame {
+        margin: auto;
         margin-bottom: 20px;
     }
     
-    .aboutMe-photo-first,
-    .aboutMe-photo-second {
-        width: 345px;
-        height: auto;
+    .aboutMe-photo {
+        width: 330px;
+        height: 370px;
     }
 }
 
@@ -100,5 +98,10 @@
     .aboutMe-photo {
         width: 300px;
         height: 370px;
+    }
+
+    .aboutMe-image {
+        width: 45vw;
+        right: 5%;
     }
 }

@@ -53,13 +53,13 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
               </div>
               <div className="header-option">
                 <SeparateFlower />
-                <span className="header-button" onClick={() => scrollToSection('services')}>
+                <span className="header-button" onClick={() => scrollToSection('help')}>
                   С чем я могу помочь
                 </span>
               </div>
               <div className="header-option">
                 <SeparateFlower />
-                <span className="header-button" onClick={() => scrollToSection('services')}>
+                <span className="header-button" onClick={() => scrollToSection('principles')}>
                   Принцип работы
                 </span>
               </div>
