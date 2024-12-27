@@ -45,10 +45,9 @@
 }
 
 @media (min-width: 1900px) {
-    .aboutMe-photo-first,
-    .aboutMe-photo-second {
-        width: 400px;
-        height: 500px;
+    .aboutMe-photo {
+        width: 30vw;
+        height: 60vh;
     }
 }
 
