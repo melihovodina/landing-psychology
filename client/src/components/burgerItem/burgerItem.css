@@ -1,6 +1,6 @@
 .burgerItem {
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   transition: box-shadow 0.3s ease;
 }
   
@@ -53,4 +53,22 @@
 .burgerItem-content p {
   margin: 0;
   font-size: 18px;
+}
+
+@media (max-width: 719px) {
+  .burgerItem-header {
+    padding: 10px;
+  }
+
+  .burgerItem-title {
+    font-size: 18px;
+  }
+
+  .burgerItem-content.open {
+    padding: 10px 10px;
+  }
+
+  .burgerItem-content.close {
+    padding: 0 10px;
+  }
 }

@@ -73,45 +73,45 @@
         display: flex;
         text-align: justify;
         flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        gap: 0;
     }
     
     .myServices-title {
         font-size: 32px;
-        margin: 40px 0 20px 0;
     }
 
-    .servicesList-main {
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 0 20px 0;
+    .myServices-list {
+        margin-top: 20px;
     }
-    
+
+    .myServices-photo {
+        width: 330px;
+        height: 420px;
+    }
+
+    .myServices-image-second,
     .myServices-image-first {
-        width: 90%;
-        bottom: 180px;
-        left: -70px;
-    }
-    
-    .myServices-image-second {
-        width: 90%;
-        top: 20px;
-        right: 0%;
-        left: 100px;
+        display: none;
     }
 }
 
 @media (min-width: 720px) and (max-width: 1200px) {
-    .myServices-title {
-        margin-top: 60px;
+    .myServices-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
 
-    .servicesList-main{
-        margin-top: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-        margin-bottom: 60px;
+    .myServices-photo {
+        width: 430px;
+        height: 570px;
+    }
+
+    .myServices-frame {
+        position: static;
     }
     
     .myServices-image-first {
@@ -129,7 +129,7 @@
     .myServices-image-first {
         width: 50%;
         bottom: 5%;
-        left: 10%;
+        left: 0%;
     }
     
     .myServices-image-second {
