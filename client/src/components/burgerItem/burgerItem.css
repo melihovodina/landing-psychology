@@ -1,0 +1,56 @@
+.burgerItem {
+  overflow: hidden;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease;
+}
+  
+.burgerItem-header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #D2BEB5;
+  background: white;
+  transition: background-color 0.3s ease;
+}
+  
+.burgerItem-header:hover {
+  background-color: #f1f1f1;
+}
+ 
+.burgerItem-title {
+  font-size: 24px;
+}
+
+.burgerItem-icon {
+  transition: transform 0.3s ease;
+}
+  
+.burgerItem-icon.rotate {
+  transform: rotate(180deg);
+}
+  
+.burgerItem-content {
+  overflow: hidden;
+}
+
+.burgerItem-content.open {
+  max-height: 500px;
+  padding: 10px 15px;
+  transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.burgerItem-content.close {
+  max-height: 0;
+  padding: 0 15px;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+ 
+.burgerItem-content p {
+  margin: 0;
+  font-size: 18px;
+}

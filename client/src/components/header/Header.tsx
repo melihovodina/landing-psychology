@@ -12,7 +12,7 @@ const Header: FC<{visible: boolean}> = ({visible}) => {
     if(isOpen === undefined) {
       setIsOpen(true);
     } else {
-      setIsOpen(!isOpen)
+      setIsOpen((prev) => !prev)
     }
   };
 

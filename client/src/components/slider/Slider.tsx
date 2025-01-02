@@ -2,7 +2,7 @@ import React, { FC, ReactNode, useState, useRef, useContext } from 'react';
 import './slider.css';
 import classNames from 'classnames';
 import { DeviceContext } from '../contexts/DeviceContext';
-import Arrow from '../svg/Arrow';
+import ArrowInCircle from '../svg/ArrowInCircle';
 
 interface SliderProps {
   children: ReactNode;
@@ -133,7 +133,7 @@ const Slider: FC<SliderProps> = ({
       className={classNames('slider-main', mainClass)}
       ref={sliderRef}
     >
-      <Arrow onClick={() => handleArrowClick('left')} className='slider-arrow-left'/>
+      <ArrowInCircle onClick={() => handleArrowClick('left')} className='slider-arrow-left'/>
       <div className='slider-pc'>
         <div className={classNames('slider-container', containerClass)} 
           style={{
@@ -150,7 +150,7 @@ const Slider: FC<SliderProps> = ({
           ))}
         </div>
       </div>
-      <Arrow onClick={() => handleArrowClick('right')} className='slider-arrow-right'/>
+      <ArrowInCircle onClick={() => handleArrowClick('right')} className='slider-arrow-right'/>
     </div>
   );
 };
