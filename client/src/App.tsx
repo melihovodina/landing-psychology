@@ -8,6 +8,7 @@ import Contacts from './sections/contacts/Contacts';
 import Footer from './components/footer/Footer';
 import { CgSpinner } from 'react-icons/cg';
 import './index.css';
+import Help from './sections/help/Help';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -63,6 +64,9 @@ function App() {
         </section>
         <section id="services">
           <MyServices />
+        </section>
+        <section id="help">
+          <Help />
         </section>
         <section id="education">
           <Education />

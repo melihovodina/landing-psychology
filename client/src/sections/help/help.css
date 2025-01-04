@@ -1,0 +1,31 @@
+.help-main {
+    width: 100%;
+    background-color: white;
+}
+
+.help-title {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.help-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.help-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.help-list li::marker {
+    display: block;
+    color: #C9D4D9;
+}
+
