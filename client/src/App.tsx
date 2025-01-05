@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer';
 import { CgSpinner } from 'react-icons/cg';
 import './index.css';
 import Help from './sections/help/Help';
+import Principles from './sections/principles/Principles';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -67,6 +68,9 @@ function App() {
         </section>
         <section id="help">
           <Help />
+        </section>
+        <section id="principles">
+          <Principles/>
         </section>
         <section id="education">
           <Education />

@@ -38,18 +38,34 @@
 
 .help-image-first,
 .help-image-second {
+    width: 25%;
     position: absolute;
     z-index: 0;
 }
 
 .help-image-first {
-    width: 20%;
-    top: 35%;
-    left: 5%;
+    top: 30%;
+    left: 3%;
 }
 
 .help-image-second {
-    width: 20%;
-    bottom: 10%;
-    right: 10%;
+    bottom: 5%;
+    right: 5%;
+}
+
+@media (min-width: 1900px) {
+    .help-image-first,
+    .help-image-second {
+        width: 20%;
+    }
+
+    .help-image-first {
+        top: 35%;
+        left: 5%;
+    }
+
+    .help-image-second {
+        bottom: 0%;
+        right: 10%;
+    }
 }
