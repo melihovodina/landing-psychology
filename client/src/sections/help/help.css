@@ -7,14 +7,14 @@
 .help-content {
     position: relative;
     z-index: 1;
-    margin-bottom: 160px;
+    margin-bottom: 180px;
+    margin-top: 60px;
 }
 
 .help-title {
     font-size: 40px;
     font-weight: 400;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin: 0 0 60px 0;
 }
 
 .help-text {
@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    margin: 0;
     font-size: 18px;
     gap: 20px;
 }
@@ -67,5 +68,42 @@
     .help-image-second {
         bottom: 0%;
         right: 10%;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+    .help-content {
+        margin-bottom: 60px;
+    }
+
+    .help-title {       
+        margin-bottom: 20px;
+    }
+
+    .help-image-first,
+    .help-image-second {
+        width: 30%;
+    }
+
+    .help-image-first {
+        top: 35%;
+        left: 0%;
+    }
+
+    .help-image-second {
+        bottom: 30%;
+        right: 0%;
+    }
+}
+
+@media (max-width: 719px) {
+    .help-content {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .help-title {
+        font-size: 32px;
+        margin-bottom: 10px;
     }
 }
