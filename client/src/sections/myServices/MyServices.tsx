@@ -14,11 +14,11 @@ const MyServices = () => {
           </div>
         </div>
         <PhotoFrame customClassName='myServices-frame' color='beige'>
-          <img className='myServices-photo' src="/images/knees.webp" alt="Psychologist on my services page"/> 
+          <img className='myServices-photo' src="/images/knees.webp" alt="Психолог сидит и держит себя за колена на белом фоне крупным планом"/> 
         </PhotoFrame>
       </div>
-        <img className='myServices-image-first' src="/images/service-flower.webp" alt="First background flower on 'My services' page"/> 
-        <img className='myServices-image-second' src="/images/service-flower.webp" alt="Second background flower on 'My services' page"/>
+        <img className='myServices-image-first' src="/images/service-flower.webp" alt="Фоновый рисунок цветка слева от текста"/> 
+        <img className='myServices-image-second' src="/images/service-flower.webp" alt="Фоновый рисунок цветка справа от фотографии психолога"/>
     </div>
   )
 }

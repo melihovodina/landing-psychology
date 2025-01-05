@@ -1,6 +1,13 @@
 .help-main {
     width: 100%;
     background-color: white;
+    position: relative;
+}
+
+.help-content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 160px;
 }
 
 .help-title {
@@ -29,3 +36,20 @@
     color: #C9D4D9;
 }
 
+.help-image-first,
+.help-image-second {
+    position: absolute;
+    z-index: 0;
+}
+
+.help-image-first {
+    width: 20%;
+    top: 35%;
+    left: 5%;
+}
+
+.help-image-second {
+    width: 20%;
+    bottom: 10%;
+    right: 10%;
+}

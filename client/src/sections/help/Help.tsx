@@ -26,6 +26,8 @@ const Help = () => {
           </ul>
         </div>
       </div>
+      <img className='help-image-first' src="/images/help-flower-1.webp" alt="Фоновый рисунок цветка слева от текста"/>
+      <img className='help-image-second' src="/images/help-flower-2.webp" alt="Фоновый рисунок цветка справа от текста"/> 
     </div>
   )
 }

@@ -25,8 +25,8 @@ const Education = () => {
             <BgArrow className='education-bgArrow'/> 
           </div> 
         </div>
-        <img className='education-image-first' src="/images/education-flower-1.webp" alt="First background flower on education page"/>
-        <img className='education-image-third' src="/images/education-flower-2.webp" alt="Second background flower on education page"/> 
+        <img className='education-image-first' src="/images/education-flower-1.webp" alt="Фоновый рисунок колоса слева от фотографий сертификатов"/>
+        <img className='education-image-third' src="/images/education-flower-2.webp" alt="Фоновый рисунок колоса справа от фотографий сертификатов"/> 
       </div>
     )
   }
@@ -44,9 +44,8 @@ const Education = () => {
             <img className='education-photo' src="/images/first-certificate.webp" alt="Certificate on education page" draggable="false"/>
           </div>
       </div>
-      <img className='education-image-first' src="/images/education-flower-1.webp" alt="First background flower on education page"/>
-      <img className='education-image-second' src="/images/education-flower-3.webp" alt="Second background flower on education page"/>  
-      <img className='education-image-third' src="/images/education-flower-2.webp" alt="Third background flower on education page"/> 
+      <img className='education-image-first' src="/images/education-flower-1.webp" alt="Фоновый рисунок колоса слева от фотографий сертификатов"/>
+      <img className='education-image-third' src="/images/education-flower-2.webp" alt="Фоновый рисунок колоса справа от фотографий сертификатов"/> 
     </div>
   )
 }

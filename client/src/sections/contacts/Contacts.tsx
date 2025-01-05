@@ -18,7 +18,7 @@ const Contacts = () => {
                 target='_blank'
                 rel="noreferrer"
               >
-                <img className='contacts-icon' src="/icons/inst.webp" alt="Instagram profile" style={{animationDuration: '0.8s'}}/>
+                <img className='contacts-icon' src="/icons/inst.webp" alt="Инстаграм" style={{animationDuration: '0.8s'}}/>
                 <h2 className='contacts-adress' style={{animationDuration: '0.8s'}}>{contactsText.profiles[1]}</h2>
               </a>
               <a 
@@ -28,7 +28,7 @@ const Contacts = () => {
                 target='_blank'
                 rel="noreferrer"
               >
-                <img className='contacts-icon' src="/icons/tg.webp" alt="Telegram profile" style={{animationDuration: '1s'}}/>
+                <img className='contacts-icon' src="/icons/tg.webp" alt="Телеграм" style={{animationDuration: '1s'}}/>
                 <h2 className='contacts-adress' style={{animationDuration: '1s'}}>{contactsText.profiles[0]}</h2>
               </a>
               <a 
@@ -38,7 +38,7 @@ const Contacts = () => {
                 target='_blank'
                 rel="noreferrer"
               >
-                <img className='contacts-icon' src="/icons/whats-app.webp" alt="What's app profile" style={{animationDuration: '1.2s'}}/>
+                <img className='contacts-icon' src="/icons/whats-app.webp" alt="What's app" style={{animationDuration: '1.2s'}}/>
                 <h2 className='contacts-adress' style={{animationDuration: '1.2s'}}>{contactsText.profiles[2]}</h2>
               </a>
               <a 
@@ -48,17 +48,17 @@ const Contacts = () => {
                 target='_blank'
                 rel="noreferrer"
               >
-                <img className='contacts-icon' src="/icons/viber.webp" alt="Viber profile" style={{animationDuration: '1.4s'}}/>
+                <img className='contacts-icon' src="/icons/viber.webp" alt="Viber" style={{animationDuration: '1.4s'}}/>
                 <h2 className='contacts-adress' style={{animationDuration: '1.4s'}}>{contactsText.profiles[3]}</h2>
               </a>
             </div>
           </div>  
             <div className='contacts-photo-block'>
-              <img className='contacts-photo' src="/images/phone.webp" alt="Psychologist on contacts page"/>
+              <img className='contacts-photo' src="/images/phone.webp" alt="Психолог сидит, разговаривает по телефону, делает записи в блокнот на сером фоне"/>
             </div>
         </div>
       </div>
-      <img className='contacts-image' src="/images/contacts-flower.webp" alt="Background flower on main page"/>
+      <img className='contacts-image' src="/images/contacts-flower.webp" alt="Очень большой фоновый рисунок слева от фотографии психолога"/>
     </div>
   )
 }
