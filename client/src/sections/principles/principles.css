@@ -3,6 +3,7 @@
     background-color: #F5EDE8;
     position: relative;
     display: flex;
+    overflow-x: hidden;
 }
 
 .principles-content {
@@ -45,10 +46,18 @@
 
 .principles-image {
     position: absolute;
-    width: 30%;
+    width: 35%;
     height: auto;
     right: 10%;
-    bottom: 10%;
+    bottom: 5%;
     z-index: 0;
     transform: rotate(-15deg);
+}
+
+@media (min-width: 1900px) {
+    .principles-photo {
+        width: 30vw;
+        height: 65vh;
+        object-position: center;
+    }
 }

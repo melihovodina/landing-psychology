@@ -61,13 +61,6 @@
     right: 3%;
 }
 
-@media (min-width: 1900px) {
-    .myServices-photo {
-        width: 30vw;
-        height: 75vh;
-    }
-}
-
 @media (max-width: 719px) {
     .myServices-content {
         display: flex;
