@@ -23,7 +23,7 @@
 .aboutMe-title {
     font-size: 40px;
     font-weight: 400;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 
 .aboutMe-text {
@@ -72,6 +72,7 @@
     
     .aboutMe-title {
         font-size: 32px;
+        margin-bottom: 10px;
     }
     
     .aboutMe-text {
@@ -92,7 +93,7 @@
 @media (min-width: 720px) and (max-width: 1200px) {    
     .aboutMe-content {
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
     }
 
     .aboutMe-photo {
