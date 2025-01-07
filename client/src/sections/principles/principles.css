@@ -3,7 +3,7 @@
     background-color: #F5EDE8;
     position: relative;
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .principles-content {
@@ -37,7 +37,7 @@
     margin: 0;
     font-size: 18px;
     gap: 20px;
-}   
+}
 
 .principles-list li::marker {
     display: block;
@@ -59,5 +59,61 @@
         width: 30vw;
         height: 65vh;
         object-position: center;
+    }
+}
+
+@media (max-width: 719px) {
+    .principles-content {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .principles-title {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .principles-text {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .principles-photo {
+        width: 330px;
+        height: 455px;
+    }
+
+    .principles-frame {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+    .principles-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .principles-title {
+        margin: 0;
+    }
+
+    .principles-text {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .principles-photo {
+        width: 300px;
+        height: 430px;
+    }
+
+    .principles-image {
+        width: 40%;
+        right: 5%;
     }
 }
