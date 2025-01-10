@@ -10,18 +10,38 @@ import Slider from '../../components/slider/Slider'
 const Reviews = () => {
   const { isMobile, isTablet } = useContext(DeviceContext)
 
-  if(isMobile || isTablet) {
-    <div className='reviews-main'>
-      <div className='reviews-content center'>
-        <h1 className='reviews-title'>ОТЗЫВЫ</h1>
-        <SensSlider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child'>
-          {reviewsText.map((item) => (
+  if(isMobile) {
+    return (
+      <div className='reviews-main'>
+        <div className='reviews-content center'>
+          <h1 className='reviews-title'>ОТЗЫВЫ</h1>
+          <SensSlider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child' tabletStep={2}>
+            {reviewsText.map((item) => (
               <TextItem item={item} key={item.index} blockClass='reviews-review'/>
-          ))}
-        </SensSlider>
-        <BgArrow  className='reviews-bgArrow'/>
+            ))}
+          </SensSlider>
+          <BgArrow className='reviews-bgArrow'/>
+        </div>  
       </div>
-    </div>
+    )
+  }
+
+  if(isTablet) {
+    return (
+      <div className='reviews-main'>
+        <div className='reviews-content center'>
+          <h1 className='reviews-title'>ОТЗЫВЫ</h1>
+          <SensSlider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child' tabletStep={2}>
+            {reviewsText.map((item) => (
+              <TextItem item={item} key={item.index} blockClass='reviews-review'/>
+            ))}
+          </SensSlider>
+          <BgArrow  className='reviews-bgArrow'/>
+        </div>
+        <img className='reviews-image-first' src="/images/service-flower.webp" alt="Фоновый рисунок цветка слева от текста"/> 
+        <img className='reviews-image-second' src="/images/service-flower.webp" alt="Фоновый рисунок цветка справа от фотографии психолога"/>  
+      </div>
+    )
   }
 
   return (

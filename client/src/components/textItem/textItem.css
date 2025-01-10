@@ -47,7 +47,7 @@
     .textItem-rear-block {
         width: 310px;
         min-height: 350px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         padding: 5px 1px;
     }
     
@@ -58,10 +58,6 @@
     
     .textItem-title {
         font-size: 20px;
-    }
-    
-    .textItem-text {
-        margin-top: 18px;
     }
 }
 
@@ -74,9 +70,5 @@
     .textItem-title {
         font-weight: 400;
         margin: 0;
-    }
-    
-    .textItem-text {
-        margin-top: 10px;
     }
 }

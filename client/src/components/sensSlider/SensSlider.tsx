@@ -8,6 +8,8 @@ interface SliderProps {
   mainClass?: string;
   containerClass?: string;
   childClass?: string;
+  mobileStep?: number
+  tabletStep?: number
 }
 
 const SensSlider: FC<SliderProps> = ({
@@ -15,6 +17,8 @@ const SensSlider: FC<SliderProps> = ({
   mainClass,
   containerClass,
   childClass,
+  mobileStep = 1,
+  tabletStep = 1
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0); //текущий индекс элемента слайдера
   const [isDragging, setIsDragging] = useState(false); //определяет, происходит ли сейчас перетаскивание
@@ -23,7 +27,7 @@ const SensSlider: FC<SliderProps> = ({
   const sliderRef = useRef<HTMLDivElement>(null); //ссылка на элемент слайдера
   const childrenArray = React.Children.toArray(children); //преобразует дочерние элементы в массив
   const { isTablet } = useContext(DeviceContext);
-  let step = 1
+  let step = isTablet ? tabletStep : mobileStep
 
   //обработчик начала касания
   const handleTouchStart = (e: React.TouchEvent) => {
