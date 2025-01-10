@@ -23,7 +23,7 @@ const SensSlider: FC<SliderProps> = ({
   const sliderRef = useRef<HTMLDivElement>(null); //ссылка на элемент слайдера
   const childrenArray = React.Children.toArray(children); //преобразует дочерние элементы в массив
   const { isTablet } = useContext(DeviceContext);
-  let step = isTablet ? 2 : 1
+  let step = 1
 
   //обработчик начала касания
   const handleTouchStart = (e: React.TouchEvent) => {

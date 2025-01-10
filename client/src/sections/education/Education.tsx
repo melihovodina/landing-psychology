@@ -49,6 +49,44 @@ const Education = () => {
     )
   }
 
+  if(isTablet) {
+    return (
+      <div className='education-main'>
+      <div className='education-content center'>
+        <h1 className='education-title'>ОБРАЗОВАНИЕ</h1>
+        <SensSlider mainClass='education-sensSlider-main' containerClass='education-sensSlider-container' childClass='education-sensSlider-child'>
+          <div className='education-slider-item'>
+            <PhotoFrame customClassName='education-frame' color='white'>
+              <img className='education-photo' src="/images/diploma.webp" alt="" draggable="false"/>
+            </PhotoFrame>
+           <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+          </div>
+         <div className='education-slider-item'>
+            <PhotoFrame customClassName='education-frame' color='white'>
+              <img className='education-photo' src="/images/first-certificate.webp" alt="" draggable="false"/>
+            </PhotoFrame>
+            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+          </div>
+          <div className='education-slider-item'>
+            <PhotoFrame customClassName='education-frame' color='white'>
+              <img className='education-photo' src="/images/second-certificate.webp" alt="" draggable="false"/>
+            </PhotoFrame>
+            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+          </div>
+          <div className='education-slider-item'>
+              <PhotoFrame customClassName='education-frame' color='white'>
+              <img className='education-photo' src="/images/third-certificate.webp" alt="" draggable="false"/>
+            </PhotoFrame>
+            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+          </div>
+        </SensSlider>
+      </div>
+      <img className='education-image-first' src="/images/education-flower-1.webp" alt="Фоновый рисунок колоса слева от фотографий сертификатов"/>
+      <img className='education-image-second' src="/images/education-flower-2.webp" alt="Фоновый рисунок колоса справа от фотографий сертификатов"/> 
+    </div>
+    )
+  }
+
   return (
     <div className='education-main'>
       <div className='education-content center'>
