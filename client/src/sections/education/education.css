@@ -23,6 +23,10 @@
     width: 70%;
 }
 
+.education-sensSlider-container {
+    padding-top: 10px;
+}
+
 .education-slider-item {
     min-width: 100%;
 }
@@ -45,10 +49,10 @@
 
 .education-photo {
     width: 40vw;
+    border-radius:10px; 
 }
 
 .education-frame {
-    margin-top: 10px;
     margin-bottom: 40px;
 }
 
@@ -63,91 +67,53 @@
     position: absolute;
     z-index: 0;
     bottom: 0;
+    top: 22%;
+    transform: scaleX(-1);
 }
 
 .education-image-first {
     width: 15%;
     height: auto;
     left: 7%;
-    top: 21%;
-    transform: scaleX(-1);
 }
 
 .education-image-second {
     width: 20%;
     height: auto;
     left: 74%;
-    top: 21%;
-    transform: scaleX(-1);
-}
-
-.education-bgArrow {
-    margin-bottom: 30px;
 }
 
 @media (min-width: 1900px) {
-    .education-image-first {
-        top:15%;
-    }
-    
+    .education-image-first,
     .education-image-second {
         top:15%;
-    }
-}
-
-@media (min-width: 2500px) {
-    .education-image-first {
-        height: 65vh;
-        width:auto;
-    }
-    
-    .education-image-second {
-        height: 60vh;
-        width:auto;
-    }
-    
-    .education-image-third {
-        height: 70vh;
-        width:auto;
     }
 }
 
 @media (max-width: 719px) {
     .education-title {
         font-size: 32px;
-        margin: 40px 0 0 0;
+        margin: 0 0 10px 0;
+    }
+
+    .education-content {
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
     
-    .education-subtitles{
-        margin-top: 20px;
-    }
-    
-    .education-subtitle {
-        font-size: 20px;
-    }
-    
-    .education-slider-main {
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    
-    .education-photo {
-        width: 280px;
+    .education-frame {
         margin-bottom: 20px;
     }
     
-    .education-image-first {
-        height: 45vh;
-        width:auto;
-        left: 0vw;
+    .education-photo {
+        width: 330px;
     }
-    
-    .education-image-third {
-        height: 45vh;
-        width:auto;
-        left: 60vw;
-    }
+
+    .education-subtitle {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }    
 }
 
 @media (min-width: 720px) and (max-width: 1200px) {    

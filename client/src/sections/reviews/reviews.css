@@ -18,7 +18,7 @@
 .reviews-title {
     font-weight: 400;
     font-size: 40px;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
 }
 
 .reviews-slider-content {
@@ -53,14 +53,14 @@
 
 .reviews-image-first {
     width: 25%;
-    bottom: 10%;
-    left: 4%;
+    bottom: 5%;
+    left: 5%;
 }
 
 .reviews-image-second {
     width: 25%;
     top: 5%;
-    right: 3%;
+    right: 5%;
 }
 
 @media (max-width: 719px) {
