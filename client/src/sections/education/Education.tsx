@@ -19,27 +19,27 @@ const Education = () => {
             <SensSlider mainClass='education-sensSlider-main' containerClass='education-sensSlider-container' childClass='education-sensSlider-child'>
               <div className='education-slider-item'>
                 <PhotoFrame customClassName='education-frame' color='white'>
-                  <img className='education-photo' src="/images/diploma.webp" alt="" draggable="false"/>
+                  <img className='education-photo' src="/images/diploma.webp" alt="Диплом из университета" draggable="false"/>
                 </PhotoFrame>
-                <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+                <p className='education-subtitle'>{educationText[0]}</p>
               </div>
               <div className='education-slider-item'>
                 <PhotoFrame customClassName='education-frame' color='white'>
-                  <img className='education-photo' src="/images/first-certificate.webp" alt="" draggable="false"/>
+                  <img className='education-photo' src="/images/first-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
                 </PhotoFrame>
-                <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+                <p className='education-subtitle'>{educationText[1]}</p>
               </div>
               <div className='education-slider-item'>
                 <PhotoFrame customClassName='education-frame' color='white'>
-                  <img className='education-photo' src="/images/second-certificate.webp" alt="" draggable="false"/>
+                  <img className='education-photo' src="/images/second-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
                 </PhotoFrame>
-                <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+                <p className='education-subtitle'>{educationText[2]}</p>
               </div>
               <div className='education-slider-item'>
                 <PhotoFrame customClassName='education-frame' color='white'>
-                  <img className='education-photo' src="/images/third-certificate.webp" alt="" draggable="false"/>
+                  <img className='education-photo' src="/images/third-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
                 </PhotoFrame>
-                <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+                <p className='education-subtitle'>{educationText[3]}</p>
               </div>
             </SensSlider>
             <BgArrow className='education-bgArrow'/> 
@@ -57,27 +57,27 @@ const Education = () => {
         <SensSlider mainClass='education-sensSlider-main' containerClass='education-sensSlider-container' childClass='education-sensSlider-child'>
           <div className='education-slider-item'>
             <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/diploma.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/diploma.webp" alt="Диплом из университета" draggable="false"/>
             </PhotoFrame>
-           <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+           <p className='education-subtitle'>{educationText[0]}</p>
           </div>
          <div className='education-slider-item'>
             <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/first-certificate.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/first-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
             </PhotoFrame>
-            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+            <p className='education-subtitle'>{educationText[1]}</p>
           </div>
           <div className='education-slider-item'>
             <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/second-certificate.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/second-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
             </PhotoFrame>
-            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+            <p className='education-subtitle'>{educationText[2]}</p>
           </div>
           <div className='education-slider-item'>
               <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/third-certificate.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/third-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
             </PhotoFrame>
-            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+            <p className='education-subtitle'>{educationText[3]}</p>
           </div>
         </SensSlider>
       </div>
@@ -94,27 +94,27 @@ const Education = () => {
         <Slider classNames={{content: 'education-slider-content', item: 'education-slider-item', arrow: 'education-slider-arrow'}}>
           <div className='education-slider-item'>
             <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/diploma.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/diploma.webp" alt="Диплом из университета" draggable="false"/>
             </PhotoFrame>
-           <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+           <p className='education-subtitle'>{educationText[0]}</p>
           </div>
          <div className='education-slider-item'>
             <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/first-certificate.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/first-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
             </PhotoFrame>
-            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+            <p className='education-subtitle'>{educationText[1]}</p>
           </div>
           <div className='education-slider-item'>
             <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/second-certificate.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/second-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
             </PhotoFrame>
-            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+            <p className='education-subtitle'>{educationText[2]}</p>
           </div>
           <div className='education-slider-item'>
               <PhotoFrame customClassName='education-frame' color='white'>
-              <img className='education-photo' src="/images/third-certificate.webp" alt="" draggable="false"/>
+              <img className='education-photo' src="/images/third-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
             </PhotoFrame>
-            <p className='education-subtitle'>КУРС СЕМЕЙНАЯ ТЕРАПИЯ: ИНТЕГРИРОВАННЫЙ ГЕШТАЛЬТ-ПОДХОД</p>
+            <p className='education-subtitle'>{educationText[3]}</p>
           </div>
         </Slider>
       </div>

@@ -180,7 +180,8 @@
     }
     
     .contacts-photo {
-        width: 345px;
+        width: 300px;
+        height: 370px;
     }
 
     .contacts-image {
@@ -193,7 +194,7 @@
 
 @media (min-width: 720px) and (max-width: 1200px) {
     .contacts-subtitle {
-        width: 400px;
+        width: 365px;
         margin-right: 0px;
     }
 
@@ -202,7 +203,8 @@
     }
 
     .contacts-photo {
-        width: 300px;
+        width: 320px;
+        height: 430px;
     }
 
     .contacts-image {
