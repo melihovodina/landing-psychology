@@ -8,9 +8,9 @@ import Slider from '../../components/slider/Slider';
 import PhotoFrame from '../../components/photoFrame/PhotoFrame';
 
 const Education = () => {
-  const { isMobile } = useContext(DeviceContext);
+  const { isMobile, isTablet } = useContext(DeviceContext);
 
-  if(isMobile) {
+  if(isMobile || isTablet) {
     return (
       <div className='education-main'>
         <div className='education-content center'>

@@ -6,10 +6,11 @@
     box-shadow: 0px 2px 10px 3px #E8DDD8;
     justify-content: center;
     align-items: stretch;
+    width: fit-content;
 }
 
 .textItem-block {
-    width: 20vw;
+    width: 18vw;
     min-height: 350px;
     display: block;
     border-radius: 10px;
@@ -25,8 +26,9 @@
 }
 
 .textItem-text {
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 0px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 1900px) {
