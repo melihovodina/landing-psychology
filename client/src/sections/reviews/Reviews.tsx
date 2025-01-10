@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './reviews.css'
-import Slider from '../../components/slider/Slider'
+import Slider from '../../components/sensSlider/SensSlider'
 import { reviewsText } from '../../оther/texts'
 import TextItem from '../../components/textItem/TextItem'
 import { DeviceContext } from '../../components/contexts/DeviceContext'
@@ -13,7 +13,7 @@ const Reviews = () => {
     <div className='reviews-main'>
       <div className='reviews-content center'>
         <h1 className='reviews-title'>ОТЗЫВЫ</h1>
-        <Slider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child' visibleItems={3}>
+        <Slider mainClass='reviews-slider-main' containerClass='reviews-slider-container' childClass='reviews-slider-child'>
           {reviewsText.map((item) => (
               <TextItem item={item} key={item.index} blockClass='reviews-review'/>
           ))}

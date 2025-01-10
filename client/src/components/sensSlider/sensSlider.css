@@ -1,0 +1,42 @@
+.slider-main {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-pc {
+  width: 90%;
+  height: 100%;
+  background-color: #F5EDE8;
+  overflow: hidden;
+  padding: 10px 10px;
+}
+
+.slider-container {
+  width: 100%;
+  display: flex;
+}
+
+.slider-arrow-left,
+.slider-arrow-right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.slider-arrow-left {
+  left: 0;
+}
+ 
+.slider-arrow-right {
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.slider-child {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
