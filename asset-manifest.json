@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/landing-psychology/static/css/main.0b2b06a0.css",
+    "main.js": "/landing-psychology/static/js/main.114bedf6.js",
+    "static/media/Arsenal-Regular.ttf": "/landing-psychology/static/media/Arsenal-Regular.c67ceeee927eaa2d6729.ttf",
+    "static/media/Alice-Regular.ttf": "/landing-psychology/static/media/Alice-Regular.6676c30016104188a3ec.ttf",
+    "index.html": "/landing-psychology/index.html",
+    "main.0b2b06a0.css.map": "/landing-psychology/static/css/main.0b2b06a0.css.map",
+    "main.114bedf6.js.map": "/landing-psychology/static/js/main.114bedf6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b2b06a0.css",
+    "static/js/main.114bedf6.js"
+  ]
+}
