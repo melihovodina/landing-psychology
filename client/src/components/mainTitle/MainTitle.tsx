@@ -25,7 +25,7 @@ const MainTitle: FC = () => {
           </div>
         </div>
         <PhotoFrame customClassName='mainTitle-frame' color='beige'>
-          <img className='mainTitle-photo' src="/images/white.webp" alt="Психолог крупным планом на белом фоне"/>
+          <img className='mainTitle-photo' src="/images/knees.webp" alt="Психолог сидит и держит себя за колена на белом фоне крупным планом" />
         </PhotoFrame>
       </div>
     );
@@ -40,7 +40,7 @@ const MainTitle: FC = () => {
         <button className="mainTitle-button" onClick={() => scrollToSection('contacts')}>ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
       </div>
       <PhotoFrame customClassName='mainTitle-frame' color='beige'>
-        <img className='mainTitle-photo' src="/images/white.webp" alt="Психолог крупным планом"/>
+        <img className='mainTitle-photo' src="/images/knees.webp" alt="Психолог сидит и держит себя за колена на белом фоне крупным планом" />
       </PhotoFrame> 
       <img className='mainTitle-image-first' src="/images/main-flower-1.webp" alt="Большой фоновый рисунок цветка под заголовком"/>
       <img className='mainTitle-image-second' src="/images/main-flower-2.webp" alt="Фоновый рисунок цветка слева от фото психолога"/>

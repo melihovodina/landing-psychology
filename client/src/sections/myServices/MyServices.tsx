@@ -14,7 +14,7 @@ const MyServices = () => {
           </div>
         </div>
         <PhotoFrame customClassName='myServices-frame' color='beige'>
-          <img className='myServices-photo' src="/images/knees.webp" alt="Психолог сидит и держит себя за колена на белом фоне крупным планом"/> 
+          <img className='myServices-photo' src="/images/white.webp" alt="Психолог крупным планом на белом фоне" /> 
         </PhotoFrame>
       </div>
         <img className='myServices-image-first' src="/images/service-flower.webp" alt="Фоновый рисунок цветка слева от текста"/> 
