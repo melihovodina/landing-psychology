@@ -37,9 +37,15 @@ const Education = () => {
               </div>
               <div className='education-slider-item'>
                 <PhotoFrame customClassName='education-frame' color='white'>
-                  <img className='education-photo' src="/images/third-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
+                  <img className='education-photo' src="/images/third-certificate.webp" alt="Сертификат о прохождении конференции по психологии" draggable="false"/>
                 </PhotoFrame>
                 <p className='education-subtitle'>{educationText[3]}</p>
+              </div>
+              <div className='education-slider-item'>
+                <PhotoFrame customClassName='education-frame' color='white'>
+                  <img className='education-photo' src="/images/fourth-certificate.webp" alt="Сертификат о принятии участия в конференции по психологии" draggable="false"/>
+                </PhotoFrame>
+                <p className='education-subtitle'>{educationText[4]}</p>
               </div>
             </SensSlider>
             <BgArrow className='education-bgArrow'/> 
@@ -79,6 +85,12 @@ const Education = () => {
             </PhotoFrame>
             <p className='education-subtitle'>{educationText[3]}</p>
           </div>
+          <div className='education-slider-item'>
+            <PhotoFrame customClassName='education-frame' color='white'>
+              <img className='education-photo' src="/images/fourth-certificate.webp" alt="Сертификат о принятии участия в конференции по психологии" draggable="false"/>
+            </PhotoFrame>
+            <p className='education-subtitle'>{educationText[4]}</p>
+          </div>
         </SensSlider>
       </div>
       <img className='education-image-first' src="/images/education-flower-1.webp" alt="Фоновый рисунок колоса слева от фотографий сертификатов"/>
@@ -115,6 +127,12 @@ const Education = () => {
               <img className='education-photo' src="/images/third-certificate.webp" alt="Сертификат о прохождении курса по психологии" draggable="false"/>
             </PhotoFrame>
             <p className='education-subtitle'>{educationText[3]}</p>
+          </div>
+          <div className='education-slider-item'>
+            <PhotoFrame customClassName='education-frame' color='white'>
+              <img className='education-photo' src="/images/fourth-certificate.webp" alt="Сертификат о принятии участия в конференции по психологии" draggable="false" style={{border: '1px solid #E8DDD8'}}/>
+            </PhotoFrame>
+            <p className='education-subtitle'>{educationText[4]}</p>
           </div>
         </Slider>
       </div>
